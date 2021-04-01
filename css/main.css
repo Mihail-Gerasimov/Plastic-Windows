@@ -12,14 +12,14 @@ html {
 
 html,
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     line-height: normal;
     font-weight: normal;
     margin: 0;
     padding: 0;
     font-size: 12px;
     color: #000000;
-    background-color: #EDF5F8;
+    background-color: #EDF5F8 !important;
 }
 
 a,
