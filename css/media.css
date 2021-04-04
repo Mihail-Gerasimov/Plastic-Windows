@@ -25,12 +25,200 @@
     /* footer */
 }
 
+@media (max-width: 1450px) {
+    /* header */
+    .header-title {
+        font-size: 38px;
+        line-height: 45px;
+        width: 460px;
+    }
+    .header-gift {
+        font-size: 18px;
+        line-height: 24px;
+        padding-left: 15px;
+    }
+    .header-gift::before {
+        height: 60px;
+        left: 0;
+        top: -5px;
+    }
+    .window-30 {
+        right: -110px;
+        top: 0;
+        transform: translateY(-26%);
+        width: 115px;
+    }
+    .big-window {
+        width: 470px;
+        transform: translateX(-50%);
+        top: -110px;
+    }
+    .form-title {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .form-text {
+        font-size: 17px;
+        line-height: 21px;
+    }
+    .form-general__block {
+        margin-right: 50px;
+    }
+    .input-form {
+        width: 290px;
+    }
+    .btn-header__width {
+        width: 290px;
+    }
+    .btn-form {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .form-fon {
+        max-width: 360px;
+        top: -30px;
+        left: -34px;
+    }
+    .yellow-fon {
+        height: 459px;
+        width: 330px;
+        left: -21px;
+        top: -45px;
+    }
+    .big-header__text {
+        font-size: 16px;
+        width: 840px;
+        margin: 140px auto 0;
+    }
+    /* header */
+    /* pleasantprices */
+    .pleasantprices {
+        padding-bottom: 50px;
+        padding-top: 140px;
+        background-position-y: -85px;
+    }
+    .pleasantprices-title {
+        margin-bottom: 80px;
+    }
+    .examples-window {
+        margin-bottom: 60px;
+    }
+    /* pleasantprices */
+    /* options */
+    /* options */
+    /* buy-profitable */
+    /* buy-profitable */
+    /* quiz */
+    /* quiz */
+    /* services */
+    /* services */
+    /* work */
+    /* work */
+    /* difference */
+    /* difference */
+    /* customer-reviews */
+    /* customer-reviews */
+    /* certificates */
+    /* certificates */
+    /* footer */
+    /* footer */
+}
+
 @media (max-width: 1250px) {
-    /* navigation */
-    /* navigation */
     /* header */
+    .header {
+        background-position-y: -70px;
+        padding-top: 75px;
+    }
+    .header-title {
+        font-size: 30px;
+        line-height: 35px;
+        width: 365px;
+    }
+    .header-gift {
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 15px;
+    }
+    .header-gift::before {
+        height: 50px;
+        left: 0;
+        top: -5px;
+    }
+    .window-30 {
+        right: -115px;
+        top: 0px;
+        transform: translateY(-26%);
+        width: 150px;
+    }
+    .big-window {
+        width: 390px;
+        transform: translateX(-50%);
+        top: -90px;
+    }
+    .form-general__block {
+        margin-right: 21px;
+    }
+    .form-title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .form-text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .input-form {
+        width: 240px;
+    }
+    .input-form {
+        font-size: 14px;
+        line-height: 17px;
+        padding: 16px 0 16px 28px;
+    }
+    .btn-form {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .btn-header__width {
+        width: 240px;
+    }
+    .form-fon {
+        height: 380px;
+        max-width: 280px;
+        top: -25px;
+        left: -20px;
+    }
+    .yellow-fon {
+        height: 400px;
+        width: 250px;
+        left: -6px;
+        top: -35px;
+    }
+    /* .big-window {
+        width: 470px;
+        transform: translateX(-40%);
+        left: 50%;
+        top: -110px;
+    } */
     /* header */
     /* pleasantprices */
+    .examples-window {
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
+    .examples-block {
+        margin: 0 auto;
+    }
+    .btn-pleasantprices-width {
+        width: 345px;
+    }
+    .pleasantprices {
+        background-position-y: 0;
+    }
+    .pleasantprices-tree {
+        transform: translateY(49%);
+        height: 550px;
+    }
     /* pleasantprices */
     /* options */
     /* options */
@@ -50,12 +238,44 @@
     /* certificates */
     /* footer */
     /* footer */
+}
+
+@media (max-width: 1100px) {
+    /* header */
+    .big-window {
+        width: 270px;
+        transform: translateX(-41%);
+        top: -52px;
+    }
+    /* header */
 }
 
 @media (max-width: 992px) {
     /* navigation */
+    .logo {
+        height: 23px;
+        width: 118px;
+        margin-right: 30px;
+    }
+    .job-nav {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .number-nav {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .btn-nav {
+        font-size: 12px;
+        line-height: 14px;
+    }
     /* navigation */
     /* header */
+    .big-header__text {
+        font-size: 16px;
+        width: 600px;
+        margin: 140px auto 0;
+    }
     /* header */
     /* pleasantprices */
     /* pleasantprices */
@@ -79,10 +299,57 @@
     /* footer */
 }
 
+@media (max-width: 900px) {
+    /* header */
+    .big-window {
+        display: none;
+    }
+    /* header */
+}
+
 @media (max-width: 767px) {
     /* navigation */
+    .logo {
+        margin-right: 20px;
+    }
+    .job-nav {
+        font-size: 10px;
+        line-height: 11px;
+    }
+    .number-nav {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .btn-nav {
+        font-size: 10px;
+        line-height: 12px;
+    }
     /* navigation */
     /* header */
+    .header {
+        background-position-y: -410px;
+        padding-top: 35px;
+    }
+    .header-title {
+        text-align: center;
+        margin-bottom: 300px;
+        width: 255px;
+    }
+    .window-30 {
+        display: none;
+    }
+    .header-block__left {
+        margin-bottom: 80px;
+    }
+    .big-header__text {
+        font-size: 16px;
+        width: 375px;
+        margin: 120px auto 0;
+    }
+    .mobile-win-combo {
+        top: 95px;
+        left: 0;
+    }
     /* header */
     /* pleasantprices */
     /* pleasantprices */
@@ -108,10 +375,67 @@
 
 @media (max-width: 576px) {
     /* navigation */
+    .navigation {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(53, 134, 152, 0.21);
+    }
+    .job-nav {
+        display: none;
+    }
+    .logo {
+        margin-right: 0px;
+        height: 26px;
+        width: 135px;
+    }
+    .nav-content {
+        border: none;
+        margin-bottom: 2px;
+    }
     /* navigation */
     /* header */
+    .header-title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .header-gift {
+        font-size: 14px;
+        line-height: 17px;
+        padding-left: 10px;
+    }
+    .header-gift::before {
+        height: 45px;
+    }
+    .form-general__block {
+        margin-right: 0px;
+    }
+    .big-header__text {
+        font-size: 13px;
+        width: 285px;
+    }
     /* header */
     /* pleasantprices */
+    .examples-window {
+        margin-bottom: 20px;
+    }
+    .pleasantprices-title {
+        margin-bottom: 35px;
+    }
+    .name-win {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .examples-block__price {
+        margin-bottom: 22px;
+    }
+    .examples-price-top {
+        text-align: center;
+    }
+    .examples-price-bottom {
+        text-align: center;
+    }
+    .btn-pleasantprices-width {
+        width: 275px;
+    }
     /* pleasantprices */
     /* options */
     /* options */
