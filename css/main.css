@@ -323,6 +323,7 @@ button:focus {
 }
 
 .form-block {
+    width: fit-content;
     z-index: 0;
 }
 
@@ -410,6 +411,7 @@ button:focus {
     background-repeat: no-repeat;
     background-position-y: -110px;
     background-size: cover;
+    margin-bottom: 200px;
 }
 
 .name-win {
@@ -469,11 +471,64 @@ button:focus {
 
 /* options */
 
+.options {
+    margin-bottom: 100px;
+}
+
+.options-block {
+    border-bottom: 1px solid #CCE2EA;
+    margin-bottom: 115px;
+}
+
+.additional-options {
+    margin-left: 150px;
+    margin-top: -50px;
+}
+
 
 /* options */
 
 
 /* buy-profitable */
+
+.profitable-title {
+    margin-bottom: 32px;
+}
+
+.date-profitable {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    width: 815px;
+    margin: 0 auto 75px;
+}
+
+.date-profitable span {
+    font-weight: 700;
+}
+
+.images-info {
+    margin-bottom: 120px;
+}
+
+.measurer-block {
+    margin-bottom: 50px;
+}
+
+.metrs-images {
+    position: static;
+}
+
+.measurer-text__form {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+}
 
 
 /* buy-profitable */

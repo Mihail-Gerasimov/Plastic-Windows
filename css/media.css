@@ -273,6 +273,9 @@
     }
     /* pleasantprices */
     /* options */
+    .additional-options {
+        margin-top: -35px;
+    }
     /* options */
     /* buy-profitable */
     /* buy-profitable */
@@ -388,6 +391,11 @@
     .footer__box--first {
         margin-right: 10px;
     }
+    /* profitable */
+    .images-info {
+        margin-bottom: 60px;
+    }
+    /* profitable */
 }
 
 @media (max-width: 992px) {
@@ -420,8 +428,17 @@
     /* pleasantprices */
     /* pleasantprices */
     /* options */
+    .additional-options {
+        margin-left: 70px;
+    }
     /* options */
     /* buy-profitable */
+    .date-profitable {
+        font-size: 23px;
+        line-height: 27px;
+        width: 495px;
+        margin: 0 auto 45px;
+    }
     /* buy-profitable */
     /* quiz */
     /* quiz */
@@ -455,11 +472,13 @@
     .work {
         margin-bottom: 100px;
     }
-    .work__img--main {
+    /* .work__img--main {
         display: none;
-    }
+    } */
     .work__row {
-        display: block;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
         margin-bottom: 30px;
     }
     .work__box {
@@ -474,9 +493,6 @@
     }
     .work__title {
         margin-bottom: 40px;
-    }
-    .work__link {
-        display: block;
     }
     /* work */
     /* difference */
@@ -667,8 +683,37 @@
     /* pleasantprices */
     /* pleasantprices */
     /* options */
+    .additional-options {
+        margin-left: 0px;
+        margin-top: 90px;
+    }
+    .teiple-win {
+        width: 300px;
+    }
     /* options */
     /* buy-profitable */
+    .measurer-block {
+        width: fit-content;
+        margin: 0 auto 50px;
+    }
+    .images-info {
+        margin-bottom: 60px;
+    }
+    .metrs-images {
+        right: 132px;
+        position: absolute;
+        width: 170px;
+        top: -37px;
+    }
+    .measurer-btn {
+        width: 240px;
+    }
+    .measurer-text__form {
+        width: 170px;
+        text-align: end;
+        font-size: 24px;
+        line-height: 26px;
+    }
     /* buy-profitable */
     /* quiz */
     /* quiz */
@@ -693,6 +738,20 @@
     }
     /* services */
     /* work */
+    .work__link {
+        display: block;
+    }
+    .work__link:hover {
+        text-decoration: underline !important;
+        color: #C40021 !important;
+    }
+    .work__box {
+        grid-template-columns: 1fr;
+    }
+    .work__row {
+        max-height: 190px;
+        overflow: hidden;
+    }
     /* work */
     /* difference */
     .difference {
@@ -833,8 +892,31 @@
     }
     /* pleasantprices */
     /* options */
+    .options-block {
+        border-bottom: none;
+        margin-bottom: 115px;
+    }
+    .teiple-win {
+        width: 280px;
+    }
     /* options */
     /* buy-profitable */
+    .metrs-images {
+        right: 132px;
+        width: 110px;
+        top: -16px;
+    }
+    .date-profitable {
+        font-size: 18px;
+        line-height: 22px;
+        width: 250px;
+    }
+    .measurer-text__form {
+        width: 130px;
+        font-size: 18px;
+        line-height: 20px;
+        margin-right: -100px;
+    }
     /* buy-profitable */
     /* quiz */
     /* quiz */

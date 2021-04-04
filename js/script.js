@@ -1,5 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const workLink = document.querySelector('.work__link'),
+        workRow = document.querySelector('.work__row');
+
+    workLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        workLink.classList.toggle('work__link--active');
+        if (workLink.classList.contains('work__link--active')) {
+            workRow.style.maxHeight = `${workRow.scrollHeight}px`;
+            workLink.textContent = 'Скрыть';
+        } else {
+            workRow.style.maxHeight = `190px`;
+            workLink.textContent = 'Подгрузить еще...';
+        }
+    });
+
     // Функция слайдера
     function slider(window, field, cards, cardWidth, margin, dotsWrap, dotClass, dotClassActive, arrowPrev, arrowNext, arrowClass) {
         const window_ = document.querySelector(window),
