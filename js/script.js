@@ -202,4 +202,38 @@ document.addEventListener('DOMContentLoaded', () => {
         'rev__arrow--mobile--inactive'
     );
 
+    var myCarousel = document.querySelector('#myCarousel');
+    var carousel = new bootstrap.Carousel(myCarousel);
+    // btn
+    const btnRehau = document.getElementById('rehau');
+    const btnKbe = document.getElementById('kbe');
+
+    const activeRehau = document.getElementsByClassName('skip-btn_active');
+    // block
+    const slidekRehau = document.getElementById('rehau-slide');
+    const slideKbe = document.getElementById('kbe-slide');
+
+    // sliders
+
+
+    btnKbe.onclick = function() {
+        slideKbe.classList.remove("d-none");
+        console.log('f');
+        slidekRehau.classList.add("d-none");
+        console.log('g');
+        btnKbe.classList.add("skip-btn_active");
+        btnRehau.classList.remove("skip-btn_active");
+    };
+
+    btnRehau.onclick = function() {
+        slideKbe.classList.add("d-none");
+        console.log('f');
+        slidekRehau.classList.remove("d-none");
+        console.log('g');
+
+        btnKbe.classList.remove("skip-btn_active");
+        btnRehau.classList.add("skip-btn_active");
+    };
+
+
 });

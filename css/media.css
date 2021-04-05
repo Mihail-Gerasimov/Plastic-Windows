@@ -363,9 +363,27 @@
         margin-right: 70px;
         padding-top: 25px;
     }
-    .over-footer__form {
+    /* .over-footer__form {
         width: 300px;
         height: 300px;
+    } */
+    .over-footer__form {
+        align-items: flex-start !important;
+        width: 300px;
+        /* height: 300px; */
+    }
+    .form-fon-footer {
+        height: 270px;
+        max-width: 300px;
+        left: -29px;
+        top: -35px;
+        width: 300px;
+    }
+    .yellow-fon-footer {
+        width: 260px;
+        height: 290px;
+        top: -45px;
+        left: -8px;
     }
     /* footer */
 }
@@ -426,6 +444,9 @@
     }
     /* header */
     /* pleasantprices */
+    .pleasantprices-tree {
+        display: none;
+    }
     /* pleasantprices */
     /* options */
     .additional-options {
@@ -624,6 +645,9 @@
     }
     .footer__row {
         justify-content: space-between;
+    }
+    .over-footer__form {
+        align-items: center !important;
     }
     /* footer */
 }
@@ -955,6 +979,13 @@
     .rev__arrow--mobile--next {
         order: 2;
     }
+    .rev__card__text {
+        font-size: 12px;
+        line-height: 23px;
+    }
+    .rev__card__wrap {
+        height: 415px;
+    }
     /* customer-reviews */
     /* certificates */
     .cert__title {
@@ -988,5 +1019,8 @@
     }
     /* certificates */
     /* footer */
+    .over-footer-width {
+        width: 240px;
+    }
     /* footer */
 }
