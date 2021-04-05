@@ -573,7 +573,7 @@ button:focus {
     border-radius: 46px;
     padding: 5px 7px;
     width: fit-content;
-    margin-bottom: 40px;
+    margin-bottom: 170px;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -598,6 +598,78 @@ button:focus {
     border: 1px solid #F0A90F;
     box-sizing: border-box;
     border-radius: 53px;
+}
+
+.carousel-control-prev-icon {
+    transform: rotate(180deg);
+    background-image: url(../img/profile-systems/next-ar.png) !important;
+    background: #FFFFFF;
+    border: 1px solid #B3CDDD;
+    box-sizing: border-box;
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/profile-systems/next-ar.png) !important;
+    background: #FFFFFF;
+    border: 1px solid #B3CDDD;
+    box-sizing: border-box;
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: 1 !important;
+    height: fit-content !important;
+    width: fit-content !important;
+    top: 33%;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+    transition: 0.3s;
+    filter: none;
+}
+
+.carousel-control-next {
+    right: -100px;
+}
+
+.carousel-control-prev {
+    left: -530px;
+}
+
+.carousel-indicators {
+    width: fit-content;
+    position: absolute;
+    right: auto;
+    top: -60px;
+    bottom: auto;
+    left: 0;
+    transform: translateX(-40%);
+}
+
+.carousel-indicators .active {
+    background-color: red;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 130px;
+    height: 2px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 
