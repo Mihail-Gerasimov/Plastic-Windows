@@ -11,6 +11,79 @@
     /* header */
     /* pleasantprices */
     /* pleasantprices */
+    /* profile-systems */
+    .prof-win-block {
+        margin-top: 0px;
+        height: 300px;
+        width: 330px;
+    }
+    .profile-slider {
+        max-width: 700px;
+        width: 700px;
+        height: 360px;
+    }
+    .slider-title {
+        font-size: 18px;
+        line-height: 120%;
+    }
+    .slider-text {
+        width: 600px;
+        font-size: 11px;
+        line-height: 150%;
+    }
+    .specification-item {
+        margin-bottom: 15px !important;
+        font-size: 11px;
+        line-height: 150%;
+        position: relative;
+        padding-left: 25px;
+    }
+    .specification-item:last-child {
+        margin-bottom: 0px !important;
+    }
+    .specification-item:not(:first-child)::before {
+        top: 1px;
+    }
+    .top-number {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .btn-text {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .obj-title {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .prices-bottom {
+        font-size: 13px;
+        width: 305px;
+    }
+    .carousel-control-next-icon {
+        height: 50px;
+        width: 50px;
+    }
+    .carousel-control-prev-icon {
+        height: 50px;
+        width: 50px;
+    }
+    .carousel-control-prev {
+        left: -330px;
+    }
+    .carousel-control-next {
+        right: 20px;
+    }
+    .prices-top__left {
+        margin-right: 40px;
+    }
+    .specification-block {
+        justify-content: flex-start !important;
+    }
+    .specification-list {
+        margin-right: 15px;
+    }
+    /* profile-systems */
     /* options */
     /* options */
     /* buy-profitable */
@@ -396,6 +469,19 @@
         top: -52px;
     }
     /* header */
+    /* profile-system */
+    .carousel-control-next,
+    .carousel-control-prev {
+        top: 115%;
+    }
+    .carousel-control-next {
+        left: 425px;
+        right: auto;
+    }
+    .carousel-control-prev {
+        left: -100px;
+    }
+    /* profile-system */
     .over-footer {
         margin-bottom: -80px;
     }
@@ -461,6 +547,107 @@
         margin: 0 auto 45px;
     }
     /* buy-profitable */
+    /* profile-system */
+    .profile-text {
+        font-size: 13px;
+        width: 500px;
+        text-align: center;
+    }
+    .carousel-indicators {
+        width: fit-content;
+        position: absolute;
+        right: auto;
+        top: -79px;
+        bottom: auto;
+        left: 0;
+        transform: translateX(-40%);
+    }
+    .carousel-indicators [data-bs-target] {
+        width: 60px;
+    }
+    .carousel-indicators--two {
+        transform: translateX(-45%) !important;
+    }
+    .text-abs-btn {
+        top: -22px;
+        left: 8px;
+        font-size: 12px;
+        line-height: 150%;
+    }
+    .btn-carusel--item:first-child .hit {
+        right: 18px;
+    }
+    .btn-carusel--item:nth-child(2) .hit {
+        right: 15px;
+    }
+    .btn-carusel--item__two:nth-child(1) .hit-two {
+        left: auto;
+        right: 14px;
+    }
+    .hit {
+        top: 10px;
+        left: 17px;
+        font-size: 10px;
+        line-height: 150%;
+        padding: 1px 2px;
+    }
+    .hit-two {
+        top: 10px;
+        left: 12px;
+        font-size: 8px;
+        padding: 1px 2px;
+    }
+    .prof-win-block {
+        margin-top: 0px;
+        height: 250px;
+        width: 330px;
+    }
+    .profile-slider {
+        max-width: initial;
+        width: 540px;
+        height: 320px;
+    }
+    .slider-text {
+        width: 430px;
+        font-size: 11px;
+    }
+    .specification-item {
+        margin-bottom: 13px !important;
+        font-size: 10px;
+    }
+    .top-number {
+        font-size: 16px;
+        line-height: 17px;
+    }
+    .obj-title {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .btn-form--slider__money {
+        padding: 13px 25px;
+        height: fit-content;
+    }
+    .prices-top__left {
+        margin-right: 10px;
+    }
+    .btn-text {
+        font-size: 11px;
+        line-height: 15px;
+        bottom: 3px;
+        left: 22px;
+    }
+    .prices-bottom {
+        font-size: 11px;
+        width: 180px;
+    }
+    .carousel-control-next {
+        left: 330px;
+        right: auto;
+    }
+    .carousel-control-prev {
+        left: -200px;
+    }
+    /* profile-system */
     /* quiz */
     /* quiz */
     /* services */
@@ -706,6 +893,106 @@
     /* header */
     /* pleasantprices */
     /* pleasantprices */
+    /* profile-system */
+    .carousel-control-prev {
+        display: none;
+    }
+    .carousel-control-next {
+        display: none;
+    }
+    .profile-text {
+        font-size: 14px;
+        width: 270px;
+    }
+    .slider-title {
+        font-size: 18px;
+        line-height: 120%;
+        margin: 0 auto 20px !important;
+        width: fit-content;
+    }
+    .specification-list {
+        margin-right: 0px;
+        margin-bottom: 25px;
+        margin-left: -10px;
+    }
+    .prices-top {
+        margin-bottom: 25px;
+        padding-bottom: 0px;
+        border-bottom: none;
+        flex-direction: column;
+    }
+    .carousel-indicators {
+        transform: translateX(-9%);
+    }
+    .carousel-indicators--two {
+        transform: translateX(0%) !important;
+    }
+    .skip-slider {
+        width: 276px;
+        margin-bottom: 120px;
+    }
+    .skip-btn {
+        padding: 10px 35px;
+        font-size: 16px;
+    }
+    .prices-top__left {
+        margin-right: 0px;
+        display: flex;
+        margin-bottom: 35px;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .top-number {
+        font-size: 20px;
+        line-height: 24px;
+        margin-right: 15px;
+    }
+    .obj-title {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .profile-block {
+        margin-bottom: 40px;
+    }
+    .btn-form--slider__money {
+        width: 270px;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        line-height: 25px;
+        padding: 20px 25px;
+    }
+    .btn-text {
+        font-size: 13px;
+        line-height: 15px;
+        bottom: 8px;
+        left: 85px;
+    }
+    .specification-item {
+        font-size: 14px;
+    }
+    .prices-bottom {
+        font-size: 12px;
+        width: 280px;
+    }
+    .profile-slider {
+        width: 430px;
+        height: auto;
+    }
+    .prices-slider {
+        align-items: center;
+    }
+    .slider-text {
+        width: 430px;
+        font-size: 14px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .specification-block {
+        flex-direction: column;
+        align-items: center !important;
+    }
+    /* profile-system */
     /* options */
     .additional-options {
         margin-left: 0px;
@@ -915,6 +1202,45 @@
         width: 275px;
     }
     /* pleasantprices */
+    /* profile-system */
+    .slider-text {
+        width: 275px;
+        font-size: 11px;
+        text-align: start;
+    }
+    .profile-slider {
+        width: 280px;
+        height: auto;
+    }
+    .carousel-indicators [data-bs-target] {
+        width: 48px;
+    }
+    .carousel-indicators {
+        transform: translateX(-1%);
+        margin: 0 !important;
+    }
+    .btn-carusel--item:first-child .hit {
+        right: 13px;
+    }
+    .hit {
+        left: 11px;
+    }
+    .btn-carusel--item:nth-child(2) .hit {
+        right: 12px;
+    }
+    .text-abs-btn {
+        top: -18px;
+        left: 1px;
+        font-size: 10px;
+    }
+    .carousel-indicators--two {
+        transform: translateX(9%) !important;
+    }
+    .btn-carusel--item__two:nth-child(1) .hit-two {
+        left: auto;
+        right: 9px;
+    }
+    /* profile-system */
     /* options */
     .options-block {
         border-bottom: none;

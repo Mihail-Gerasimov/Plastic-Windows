@@ -661,12 +661,16 @@ button:focus {
     transform: translateX(-40%);
 }
 
+.carousel-indicators--two {
+    transform: translateX(-37%) !important;
+}
+
 .carousel-indicators .active {
     background-color: red;
 }
 
 .carousel-indicators [data-bs-target] {
-    width: 130px;
+    width: 135px;
     height: 2px;
     margin-right: 0px;
     margin-left: 0px;
@@ -699,12 +703,34 @@ button:focus {
 
 .btn-carusel--item:first-child .hit {
     left: auto;
-    right: 25px;
+    right: 20px;
 }
 
 .btn-carusel--item:nth-child(2) .hit {
     left: auto;
-    right: 40px;
+    right: 37px;
+}
+
+.hit-two {
+    top: -25px;
+    left: 90px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 8.5px;
+    line-height: 130%;
+    color: #FFFFFF;
+    background: #C40021;
+    border-radius: 4px;
+    padding: 2px 7px;
+}
+
+.btn-carusel--item__two:nth-child(1) .hit-two {
+    left: auto;
+    right: 3px;
+}
+
+.text-abs-btn--two {
+    left: 4px !important;
 }
 
 
