@@ -472,7 +472,7 @@ button:focus {
 /* profile-system */
 
 .profile-systems {
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
 }
 
 .profile-text {
@@ -738,6 +738,13 @@ button:focus {
 
 
 /* options */
+
+.common-one {
+    padding-top: 300px;
+    background-position-y: -107px;
+    background-image: url(../img/COMMON-TWO/common-fon-two.png);
+    background-repeat: no-repeat;
+}
 
 .options {
     margin-bottom: 100px;

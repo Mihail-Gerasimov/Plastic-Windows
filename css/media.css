@@ -1185,6 +1185,10 @@
     }
     /* header */
     /* pleasantprices */
+    .pleasantprices {
+        margin-top: 20px;
+        margin-bottom: 75px;
+    }
     .examples-window {
         margin-bottom: 20px;
     }
@@ -1254,6 +1258,13 @@
     }
     /* profile-system */
     /* options */
+    .common-one {
+        background-size: 600px 1142px;
+        padding-top: 120px;
+        background-position-y: 845px;
+        background-image: url(../img/COMMON-TWO/common-fon-two.png);
+        background-repeat: no-repeat;
+    }
     .options-block {
         border-bottom: none;
         margin-bottom: 115px;
