@@ -894,6 +894,12 @@
     /* pleasantprices */
     /* pleasantprices */
     /* profile-system */
+    .prof-win-block {
+        margin-top: 0px;
+        height: 195px;
+        width: 242px;
+        margin-left: 62px;
+    }
     .carousel-control-prev {
         display: none;
     }
