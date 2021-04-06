@@ -1315,6 +1315,7 @@
     /* customer-reviews */
     /* certificates */
     .cert__title {
+        font-size: 25px;
         margin-bottom: 40px;
         padding-right: 10px;
     }
