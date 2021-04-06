@@ -1231,6 +1231,12 @@
     .hit {
         left: 11px;
     }
+    .hit-two {
+        top: 10px;
+        left: 12px;
+        font-size: 12px;
+        padding: 1px 2px;
+    }
     .btn-carusel--item:nth-child(2) .hit {
         right: 12px;
     }
