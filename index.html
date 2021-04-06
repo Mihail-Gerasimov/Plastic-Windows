@@ -31,6 +31,49 @@
 
 <body>
 
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Закрыть</button>
+                </div>
+
+                <h2 class="title-modal mb-4 mx-auto">Оставьте заявку</h2>
+                <p class="modal-text text-center mb-5">Для получения заявок, оставьте номер телефона и ваше имя. Наш менеджер расскажет вам все подробнее.</p>
+
+                <form action="" class="modal-form d-flex flex-column justify-content-center align-items-center">
+                    <input type="text" class="form-input mb-3" placeholder="Как вас зовут?">
+                    <input type="tel" class="form-input mb-5" placeholder="Введите номер телефона">
+
+                    <label class="label-radio">
+                        <input type="checkbox" name="people-number " class="real-radio "> 
+                        <div class="custom-radio"><img src="./img/modal/chek.svg" alt=""></div>
+                        <p class="custom-radio--text">Согласие на обработку своих персональных данных</p>
+                    </label>
+
+                    <button class="btn-form btn-modal-width">Оставить заявку</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-thanks" style="display: none;">
+        <div class="modal-thanks__content d-flex flex-column align-items-center justify-content-center">
+            <h5 class="modal-title title-modal mb-4 text-center" id="staticBackdropLabel">Заявка<br>отправлена
+            </h5>
+            <p class="thanks__content--text">
+                Мы получили вашу заявку.<br>Наш менеджер свяжится с вами.
+            </p>
+        </div>
+    </div>
+
     <nav class="navigation">
         <div class="container">
             <div class="nav-content d-flex justify-content-between align-items-center py-4 py-lg-5">
@@ -143,7 +186,7 @@
                     </div>
 
                 </div>
-                <button class="btn-form btn-pleasantprices-width">Расчитать по вашим размерам</button>
+                <button class="btn-form btn-pleasantprices-width" data-bs-toggle="modal" data-bs-target="#exampleModal">Расчитать по вашим размерам</button>
             </div>
             <img src="./img/pleasantprices/pleasantprices-tree.png" alt="tree" class="pleasantprices-tree position-absolute">
 
@@ -199,18 +242,18 @@
                                             <ul class="specification-list">
                                                 <li class="specification-item mb-3">Технические характеристики:</li>
                                                 <li class="specification-item mb-5">3-х камерный профиль</li>
-                                                <li class="specification-item mb-5">дополнительная полукамера</li>
-                                                <li class="specification-item mb-5">системная ширина 70 мм</li>
-                                                <li class="specification-item">стеклопакет толщиной до 40 мм</li>
+                                                <li class="specification-item mb-5">истемная ширина 60 мм</li>
+                                                <li class="specification-item mb-5">стеклопакет толщиной до 32 мм</li>
+                                                <li class="specification-item">экономичная стоимость</li>
                                             </ul>
 
                                             <div class="prices-slider d-flex flex-column">
                                                 <div class="prices-top d-flex">
                                                     <div class="prices-top__left">
-                                                        <h4 class="top-number mb-2">7 240 ₽</h4>
-                                                        <h4 class="obj-title header-color">4 490 ₽*</h4>
+                                                        <h4 class="top-number mb-2">8 550 р</h4>
+                                                        <h4 class="obj-title header-color">4 490 р</h4>
                                                     </div>
-                                                    <button class="btn-form  btn-form--slider__money pt-3 d-flex align-items-start position-relative">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
+                                                    <button class="btn-form  btn-form--slider__money pt-3 d-flex align-items-start position-relative " data-bs-toggle="modal" data-bs-target="#exampleModal">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
                                                 </div>
 
                                                 <p class="prices-bottom">* Цены указаны за глухое окно размером 1400х1300 мм с 2-х камерным стеклопакетом</p>
@@ -221,9 +264,9 @@
 
                                 <div class="carousel-item">
                                     <div class="d-block w-100">
-                                        <h4 class="slider-title mb-4">REHAU BLITZ (БЛИЦ)</h4>
-                                        <p class="slider-text mb-4">Благодаря своей гладкой поверхности и элегантным скосам окна из профилей REHAU BLITZ станут украшением любого дома. Два контура уплотнения защитят Ваш дом от сквозняков, пыли и влаги и тем самым создадут в помещении
-                                            оптимальный микроклимат. Трехкамерный профиль с системной глубиной 60 мм REHAU BLITZ представляет собой экономичное и качественное “оконное” решение.
+                                        <h4 class="slider-title mb-4">REHAU SIB (СИБ)</h4>
+                                        <p class="slider-text mb-4">Оконная система REHAU SIB разработана специально для российских холодов. Благодаря дополнительной изолирующей камере «термоблок» оконная система выдерживает перепады температур более 60 °C (подтверждено НИИ строительной
+                                            физики РААСН) и эффективно сохраняет тепло. Имеет монтажную ширину 70 мм и 3 камеры + термоблок
                                         </p>
                                         <img src="./img/profile-systems/prof-win.png" class="prof-win-block d-block d-md-none" alt="">
 
@@ -240,10 +283,10 @@
                                             <div class="prices-slider d-flex flex-column">
                                                 <div class="prices-top d-flex">
                                                     <div class="prices-top__left">
-                                                        <h4 class="top-number mb-2">1 ₽</h4>
+                                                        <h4 class="top-number mb-2">7 910 р</h4>
                                                         <h4 class="obj-title header-color">4 490 ₽*</h4>
                                                     </div>
-                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
+                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
                                                 </div>
 
                                                 <p class="prices-bottom">* Цены указаны за глухое окно размером 1400х1300 мм с 2-х камерным стеклопакетом</p>
@@ -254,9 +297,9 @@
 
                                 <div class="carousel-item">
                                     <div class="d-block w-100">
-                                        <h4 class="slider-title mb-4">REHAU BLITZ (БЛИЦ)</h4>
-                                        <p class="slider-text mb-4">Благодаря своей гладкой поверхности и элегантным скосам окна из профилей REHAU BLITZ станут украшением любого дома. Два контура уплотнения защитят Ваш дом от сквозняков, пыли и влаги и тем самым создадут в помещении
-                                            оптимальный микроклимат. Трехкамерный профиль с системной глубиной 60 мм REHAU BLITZ представляет собой экономичное и качественное “оконное” решение.
+                                        <h4 class="slider-title mb-4">REHAU DELIGHT (ДЕЛАЙТ)</h4>
+                                        <p class="slider-text mb-4">Ноу-хау технического решения DELIGHT дает возможность сократить высоту профильной конструкции и впустить в помещение на 10% больше света по сравнению с обычными окнами. Утонченный, изящный дизайн окон DELIGHT-Design
+                                            удачно гармонирует с их способностью надежно беречь тепло даже в сильные морозы, а это значит, что вам не придется отапливать улицу за свои деньги. Имеет монтажную ширину 70 мм и 5 камер
                                         </p>
                                         <img src="./img/profile-systems/prof-win.png" class="prof-win-block d-block d-md-none" alt="">
 
@@ -264,19 +307,19 @@
 
                                             <ul class="specification-list">
                                                 <li class="specification-item mb-3">Технические характеристики:</li>
-                                                <li class="specification-item mb-5">3-х камерный профиль</li>
-                                                <li class="specification-item mb-5">дополнительная полукамера</li>
+                                                <li class="specification-item mb-5">5-ти камерный профиль</li>
                                                 <li class="specification-item mb-5">системная ширина 70 мм</li>
-                                                <li class="specification-item">стеклопакет толщиной до 40 мм</li>
+                                                <li class="specification-item mb-5">стеклопакет толщиной до 40 мм</li>
+                                                <li class="specification-item">зауженная рама</li>
                                             </ul>
 
                                             <div class="prices-slider d-flex flex-column">
                                                 <div class="prices-top d-flex">
                                                     <div class="prices-top__left">
-                                                        <h4 class="top-number mb-2">2 ₽</h4>
-                                                        <h4 class="obj-title header-color">4 490 ₽*</h4>
+                                                        <h4 class="top-number mb-2">8 550 р</h4>
+                                                        <h4 class="obj-title header-color">5 180 р*</h4>
                                                     </div>
-                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
+                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
                                                 </div>
 
                                                 <p class="prices-bottom">* Цены указаны за глухое окно размером 1400х1300 мм с 2-х камерным стеклопакетом</p>
@@ -287,9 +330,9 @@
 
                                 <div class="carousel-item">
                                     <div class="d-block w-100">
-                                        <h4 class="slider-title mb-4">REHAU BLITZ (БЛИЦ)</h4>
-                                        <p class="slider-text mb-4">Благодаря своей гладкой поверхности и элегантным скосам окна из профилей REHAU BLITZ станут украшением любого дома. Два контура уплотнения защитят Ваш дом от сквозняков, пыли и влаги и тем самым создадут в помещении
-                                            оптимальный микроклимат. Трехкамерный профиль с системной глубиной 60 мм REHAU BLITZ представляет собой экономичное и качественное “оконное” решение.
+                                        <h4 class="slider-title mb-4">REHAU BRILLANT (БРИЛЛИАНТ)</h4>
+                                        <p class="slider-text mb-4">Оконная система REHAU BRILLANT-Design относится к системам премиум-класса, способна удовлетворить самым высоким техническим и эстетическим требованиям элитного строительства. Системная глубина 70 мм, пять воздушных
+                                            камер, а также два контура уплотнений окон из профилей REHAU BRILLANT-Design не пропускают холод и обеспечивают надежную защиту вашего дома от сквозняков, шума и сырости.
                                         </p>
                                         <img src="./img/profile-systems/prof-win.png" class="prof-win-block d-block d-md-none" alt="">
 
@@ -297,19 +340,19 @@
 
                                             <ul class="specification-list">
                                                 <li class="specification-item mb-3">Технические характеристики:</li>
-                                                <li class="specification-item mb-5">3-х камерный профиль</li>
-                                                <li class="specification-item mb-5">дополнительная полукамера</li>
+                                                <li class="specification-item mb-5"> 5-ти камерный профиль</li>
                                                 <li class="specification-item mb-5">системная ширина 70 мм</li>
-                                                <li class="specification-item">стеклопакет толщиной до 40 мм</li>
+                                                <li class="specification-item mb-5">стеклопакет толщиной до 40 мм</li>
+                                                <li class="specification-item">глянцевая поверхность</li>
                                             </ul>
 
                                             <div class="prices-slider d-flex flex-column">
                                                 <div class="prices-top d-flex">
                                                     <div class="prices-top__left">
-                                                        <h4 class="top-number mb-2">3 ₽</h4>
-                                                        <h4 class="obj-title header-color">4 490 ₽*</h4>
+                                                        <h4 class="top-number mb-2">10 710 ₽</h4>
+                                                        <h4 class="obj-title header-color">6 430 ₽*</h4>
                                                     </div>
-                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
+                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
                                                 </div>
 
                                                 <p class="prices-bottom">* Цены указаны за глухое окно размером 1400х1300 мм с 2-х камерным стеклопакетом</p>
@@ -320,9 +363,9 @@
 
                                 <div class="carousel-item">
                                     <div class="d-block w-100">
-                                        <h4 class="slider-title mb-4">REHAU BLITZ (БЛИЦ)</h4>
-                                        <p class="slider-text mb-4">Благодаря своей гладкой поверхности и элегантным скосам окна из профилей REHAU BLITZ станут украшением любого дома. Два контура уплотнения защитят Ваш дом от сквозняков, пыли и влаги и тем самым создадут в помещении
-                                            оптимальный микроклимат. Трехкамерный профиль с системной глубиной 60 мм REHAU BLITZ представляет собой экономичное и качественное “оконное” решение.
+                                        <h4 class="slider-title mb-4">REHAU GENEO (ГЕНЕО)</h4>
+                                        <p class="slider-text mb-4">Благодаря высокотехнологичному материалу RAU-FIPRO, 6-камерному строению профиля и системной глубине 86 мм оконная система GENEO позволит Вам создать комфортный микроклимат в помещении и снизить затраты на отопление.
+                                            В способности беречь тепло им нет равных: благодаря инновационной конструкции окна из профилей GENEO снижают потери энергии на 76% по сравнению со старыми деревянными окнами!
                                         </p>
                                         <img src="./img/profile-systems/prof-win.png" class="prof-win-block d-block d-md-none" alt="">
 
@@ -330,19 +373,19 @@
 
                                             <ul class="specification-list">
                                                 <li class="specification-item mb-3">Технические характеристики:</li>
-                                                <li class="specification-item mb-5">3-х камерный профиль</li>
-                                                <li class="specification-item mb-5">дополнительная полукамера</li>
-                                                <li class="specification-item mb-5">системная ширина 70 мм</li>
-                                                <li class="specification-item">стеклопакет толщиной до 40 мм</li>
+                                                <li class="specification-item mb-5">6-ти камерный профиль</li>
+                                                <li class="specification-item mb-5">системная ширина 86 мм</li>
+                                                <li class="specification-item mb-5">стеклопакет толщиной до 52 мм</li>
+                                                <li class="specification-item">повышенная надежность</li>
                                             </ul>
 
                                             <div class="prices-slider d-flex flex-column">
                                                 <div class="prices-top d-flex">
                                                     <div class="prices-top__left">
-                                                        <h4 class="top-number mb-2">4 ₽</h4>
-                                                        <h4 class="obj-title header-color">4 490 ₽*</h4>
+                                                        <h4 class="top-number mb-2">20 490 ₽</h4>
+                                                        <h4 class="obj-title header-color">12 040 ₽*</h4>
                                                     </div>
-                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
+                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
                                                 </div>
 
                                                 <p class="prices-bottom">* Цены указаны за глухое окно размером 1400х1300 мм с 2-х камерным стеклопакетом</p>
@@ -353,9 +396,10 @@
 
                                 <div class="carousel-item">
                                     <div class="d-block w-100">
-                                        <h4 class="slider-title mb-4">REHAU BLITZ (БЛИЦ)</h4>
-                                        <p class="slider-text mb-4">Благодаря своей гладкой поверхности и элегантным скосам окна из профилей REHAU BLITZ станут украшением любого дома. Два контура уплотнения защитят Ваш дом от сквозняков, пыли и влаги и тем самым создадут в помещении
-                                            оптимальный микроклимат. Трехкамерный профиль с системной глубиной 60 мм REHAU BLITZ представляет собой экономичное и качественное “оконное” решение.
+                                        <h4 class="slider-title mb-4">REHAU INTELIO (ИНТЕЛИО)</h4>
+                                        <p class="slider-text mb-4">REHAU INTELIO представляет собой 6-ти камерную систему с оптимальной высотой комбинаций главных профилей 115 мм, что обеспечивает сочетание отличных теплотехнических характеристик с максимальным светопропусканием.
+                                            Широкий фальц остекления 66 мм дает возможность устанавливать специальные 2-камерные стеклопакеты с повышенными звукоизолирующими характеристиками – в результате применения этого решения уровень шума в помещении
+                                            снижается вдвое.
                                         </p>
                                         <img src="./img/profile-systems/prof-win.png" class="prof-win-block d-block d-md-none" alt="">
 
@@ -363,19 +407,19 @@
 
                                             <ul class="specification-list">
                                                 <li class="specification-item mb-3">Технические характеристики:</li>
-                                                <li class="specification-item mb-5">3-х камерный профиль</li>
-                                                <li class="specification-item mb-5">дополнительная полукамера</li>
-                                                <li class="specification-item mb-5">системная ширина 70 мм</li>
-                                                <li class="specification-item">стеклопакет толщиной до 40 мм</li>
+                                                <li class="specification-item mb-5">6-ти камерный профиль</li>
+                                                <li class="specification-item mb-5">системная ширина 86 мм</li>
+                                                <li class="specification-item mb-5">стеклопакет толщиной до 52 мм</li>
+                                                <li class="specification-item">повышенная надежность</li>
                                             </ul>
 
                                             <div class="prices-slider d-flex flex-column">
                                                 <div class="prices-top d-flex">
                                                     <div class="prices-top__left">
-                                                        <h4 class="top-number mb-2">5 ₽</h4>
-                                                        <h4 class="obj-title header-color">4 490 ₽*</h4>
+                                                        <h4 class="top-number mb-2">13 775 ₽</h4>
+                                                        <h4 class="obj-title header-color">7 475 ₽*</h4>
                                                     </div>
-                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
+                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
                                                 </div>
 
                                                 <p class="prices-bottom">* Цены указаны за глухое окно размером 1400х1300 мм с 2-х камерным стеклопакетом</p>
@@ -426,9 +470,8 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="d-block w-100">
-                                        <h4 class="slider-title mb-4">REHAU BLITZ (БЛИЦ)</h4>
-                                        <p class="slider-text mb-4">Благодаря своей гладкой поверхности и элегантным скосам окна из профилей REHAU BLITZ станут украшением любого дома. Два контура уплотнения защитят Ваш дом от сквозняков, пыли и влаги и тем самым создадут в помещении
-                                            оптимальный микроклимат. Трехкамерный профиль с системной глубиной 60 мм REHAU BLITZ представляет собой экономичное и качественное “оконное” решение.
+                                        <h4 class="slider-title mb-4">KBE Engine</h4>
+                                        <p class="slider-text mb-4">доступная альтернатива системе KBE Engine, созданная конструкторами KBE в ответ на потребность рынка в доступной 58 мм системе. Монтажная ширина - 58 мм. Количество камер - 3
                                         </p>
                                         <img src="./img/profile-systems/prof-win-kbe.png" class="prof-win-block d-block d-md-none" alt="">
 
@@ -437,18 +480,18 @@
                                             <ul class="specification-list">
                                                 <li class="specification-item mb-3">Технические характеристики:</li>
                                                 <li class="specification-item mb-5">3-х камерный профиль</li>
-                                                <li class="specification-item mb-5">дополнительная полукамера</li>
-                                                <li class="specification-item mb-5">системная ширина 70 мм</li>
-                                                <li class="specification-item">стеклопакет толщиной до 40 мм</li>
+                                                <li class="specification-item mb-5">системная ширина 58 мм</li>
+                                                <li class="specification-item mb-5">стеклопакет толщиной до 32 мм</li>
+                                                <li class="specification-item">экономичная стоимость</li>
                                             </ul>
 
                                             <div class="prices-slider d-flex flex-column">
                                                 <div class="prices-top d-flex">
                                                     <div class="prices-top__left">
-                                                        <h4 class="top-number mb-2">7 240 ₽</h4>
-                                                        <h4 class="obj-title header-color">4 490 ₽*</h4>
+                                                        <h4 class="top-number mb-2">7 650 ₽</h4>
+                                                        <h4 class="obj-title header-color">4 250 ₽*</h4>
                                                     </div>
-                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
+                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
                                                 </div>
 
                                                 <p class="prices-bottom">* Цены указаны за глухое окно размером 1400х1300 мм с 2-х камерным стеклопакетом</p>
@@ -459,9 +502,8 @@
 
                                 <div class="carousel-item">
                                     <div class="d-block w-100">
-                                        <h4 class="slider-title mb-4">REHAU BLITZ (БЛИЦ)</h4>
-                                        <p class="slider-text mb-4">Благодаря своей гладкой поверхности и элегантным скосам окна из профилей REHAU BLITZ станут украшением любого дома. Два контура уплотнения защитят Ваш дом от сквозняков, пыли и влаги и тем самым создадут в помещении
-                                            оптимальный микроклимат. Трехкамерный профиль с системной глубиной 60 мм REHAU BLITZ представляет собой экономичное и качественное “оконное” решение.
+                                        <h4 class="slider-title mb-4">KBE Elaton</h4>
+                                        <p class="slider-text mb-4">Классическая профильная система, технология производства которой «отточена» до совершенства. Она представлена на российском рынке более 15 лет. Имеет монтажную ширину 58 мм и 3 камеры
                                         </p>
                                         <img src="./img/profile-systems/prof-win-kbe.png" class="prof-win-block d-block d-md-none" alt="">
 
@@ -470,18 +512,18 @@
                                             <ul class="specification-list">
                                                 <li class="specification-item mb-3">Технические характеристики:</li>
                                                 <li class="specification-item mb-5">3-х камерный профиль</li>
-                                                <li class="specification-item mb-5">дополнительная полукамера</li>
-                                                <li class="specification-item mb-5">системная ширина 70 мм</li>
-                                                <li class="specification-item">стеклопакет толщиной до 40 мм</li>
+                                                <li class="specification-item mb-5">системная ширина 58 мм</li>
+                                                <li class="specification-item mb-5">стеклопакет толщиной до 32 мм</li>
+                                                <li class="specification-item">экономичная стоимость</li>
                                             </ul>
 
                                             <div class="prices-slider d-flex flex-column">
                                                 <div class="prices-top d-flex">
                                                     <div class="prices-top__left">
-                                                        <h4 class="top-number mb-2">1 ₽</h4>
-                                                        <h4 class="obj-title header-color">4 490 ₽*</h4>
+                                                        <h4 class="top-number mb-2">8 170 ₽</h4>
+                                                        <h4 class="obj-title header-color">4 320 ₽*</h4>
                                                     </div>
-                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
+                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
                                                 </div>
 
                                                 <p class="prices-bottom">* Цены указаны за глухое окно размером 1400х1300 мм с 2-х камерным стеклопакетом</p>
@@ -492,9 +534,9 @@
 
                                 <div class="carousel-item">
                                     <div class="d-block w-100">
-                                        <h4 class="slider-title mb-4">REHAU BLITZ (БЛИЦ)</h4>
-                                        <p class="slider-text mb-4">Благодаря своей гладкой поверхности и элегантным скосам окна из профилей REHAU BLITZ станут украшением любого дома. Два контура уплотнения защитят Ваш дом от сквозняков, пыли и влаги и тем самым создадут в помещении
-                                            оптимальный микроклимат. Трехкамерный профиль с системной глубиной 60 мм REHAU BLITZ представляет собой экономичное и качественное “оконное” решение.
+                                        <h4 class="slider-title mb-4">KBE Energy</h4>
+                                        <p class="slider-text mb-4">Трехкамерное исполнение данной системы делает окна из профиля KBE Energy более доступными по цене. В то же время платформа 70 мм позволяет установить толстый двухкамерный стеклопакет и увеличить ширину монтажного
+                                            шва, что делает окно теплее.
                                         </p>
                                         <img src="./img/profile-systems/prof-win-kbe.png" class="prof-win-block d-block d-md-none" alt="">
 
@@ -503,18 +545,18 @@
                                             <ul class="specification-list">
                                                 <li class="specification-item mb-3">Технические характеристики:</li>
                                                 <li class="specification-item mb-5">3-х камерный профиль</li>
-                                                <li class="specification-item mb-5">дополнительная полукамера</li>
                                                 <li class="specification-item mb-5">системная ширина 70 мм</li>
-                                                <li class="specification-item">стеклопакет толщиной до 40 мм</li>
+                                                <li class="specification-item mb-5">стеклопакет толщиной до 40 мм</li>
+                                                <li class="specification-item">сповышенная теплоизоляция</li>
                                             </ul>
 
                                             <div class="prices-slider d-flex flex-column">
                                                 <div class="prices-top d-flex">
                                                     <div class="prices-top__left">
-                                                        <h4 class="top-number mb-2">2 ₽</h4>
-                                                        <h4 class="obj-title header-color">4 490 ₽*</h4>
+                                                        <h4 class="top-number mb-2">8 620 ₽</h4>
+                                                        <h4 class="obj-title header-color">4 660 ₽*</h4>
                                                     </div>
-                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
+                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
                                                 </div>
 
                                                 <p class="prices-bottom">* Цены указаны за глухое окно размером 1400х1300 мм с 2-х камерным стеклопакетом</p>
@@ -525,9 +567,9 @@
 
                                 <div class="carousel-item">
                                     <div class="d-block w-100">
-                                        <h4 class="slider-title mb-4">REHAU BLITZ (БЛИЦ)</h4>
-                                        <p class="slider-text mb-4">Благодаря своей гладкой поверхности и элегантным скосам окна из профилей REHAU BLITZ станут украшением любого дома. Два контура уплотнения защитят Ваш дом от сквозняков, пыли и влаги и тем самым создадут в помещении
-                                            оптимальный микроклимат. Трехкамерный профиль с системной глубиной 60 мм REHAU BLITZ представляет собой экономичное и качественное “оконное” решение.
+                                        <h4 class="slider-title mb-4">KBE Expert</h4>
+                                        <p class="slider-text mb-4">Современная профильная система, отвечающая высоким требованиям по теплоизоляции. KBE Expert имеет монтажную ширину 70 мм, что позволяет сделать монтажный шов на 20% шире и лучше утеплить его. Широкий 5-камерный
+                                            профиль позволяет установить более толстый стеклопакет, что значительно увеличивает теплоизоляцию помещения.
                                         </p>
                                         <img src="./img/profile-systems/prof-win-kbe.png" class="prof-win-block d-block d-md-none" alt="">
 
@@ -535,19 +577,19 @@
 
                                             <ul class="specification-list">
                                                 <li class="specification-item mb-3">Технические характеристики:</li>
-                                                <li class="specification-item mb-5">3-х камерный профиль</li>
-                                                <li class="specification-item mb-5">дополнительная полукамера</li>
+                                                <li class="specification-item mb-5">5-ти камерный профиль</li>
                                                 <li class="specification-item mb-5">системная ширина 70 мм</li>
-                                                <li class="specification-item">стеклопакет толщиной до 40 мм</li>
+                                                <li class="specification-item mb-5">стеклопакет толщиной до 40 мм</li>
+                                                <li class="specification-item">повышенная теплоизоляция</li>
                                             </ul>
 
                                             <div class="prices-slider d-flex flex-column">
                                                 <div class="prices-top d-flex">
                                                     <div class="prices-top__left">
-                                                        <h4 class="top-number mb-2">3 ₽</h4>
-                                                        <h4 class="obj-title header-color">4 490 ₽*</h4>
+                                                        <h4 class="top-number mb-2">8 910 ₽</h4>
+                                                        <h4 class="obj-title header-color">4 720 ₽*</h4>
                                                     </div>
-                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
+                                                    <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
                                                 </div>
 
                                                 <p class="prices-bottom">* Цены указаны за глухое окно размером 1400х1300 мм с 2-х камерным стеклопакетом</p>
@@ -558,9 +600,9 @@
 
                                 <div class="carousel-item">
                                     <div class="d-block w-100">
-                                        <h4 class="slider-title mb-4">REHAU BLITZ (БЛИЦ)</h4>
-                                        <p class="slider-text mb-4">Благодаря своей гладкой поверхности и элегантным скосам окна из профилей REHAU BLITZ станут украшением любого дома. Два контура уплотнения защитят Ваш дом от сквозняков, пыли и влаги и тем самым создадут в помещении
-                                            оптимальный микроклимат. Трехкамерный профиль с системной глубиной 60 мм REHAU BLITZ представляет собой экономичное и качественное “оконное” решение.
+                                        <h4 class="slider-title mb-4">KBE Select</h4>
+                                        <p class="slider-text mb-4">Премиальная система, отличающаяся плавными линиями и округлыми контурами. Отвечает потребностям самых взыскательных потребителей, предъявляющих повышенные требования к дизайну. Система Select производится только
+                                            в Германии, что говорит о ее эксклюзивности. Имеет монтажную ширину 70 мм и 5 камер
                                         </p>
                                         <img src="./img/profile-systems/prof-win-kbe.png" class="prof-win-block d-block d-md-none" alt="">
 
@@ -568,22 +610,22 @@
 
                                             <ul class="specification-list">
                                                 <li class="specification-item mb-3">Технические характеристики:</li>
-                                                <li class="specification-item mb-5">3-х камерный профиль</li>
-                                                <li class="specification-item mb-5">дополнительная полукамера</li>
+                                                <li class="specification-item mb-5">5-ти камерный профиль</li>
                                                 <li class="specification-item mb-5">системная ширина 70 мм</li>
-                                                <li class="specification-item">стеклопакет толщиной до 40 мм</li>
+                                                <li class="specification-item mb-5">стеклопакет толщиной до 30 мм</li>
+                                                <li class="specification-item">экономичная стоимость</li>
                                             </ul>
 
                                             <div class="prices-slider d-flex flex-column">
                                                 <div class="prices-top d-flex">
                                                     <div class="prices-top__left">
-                                                        <h4 class="top-number mb-2">4 ₽</h4>
-                                                        <h4 class="obj-title header-color">4 490 ₽*</h4>
+                                                        <h4 class="top-number mb-2">11 650 ₽</h4>
+                                                        <h4 class="obj-title header-color">7 650 ₽*</h4>
                                                     </div>
                                                     <button class="btn-form btn-form--slider__money pt-3 d-flex align-items-start position-relative">Расчитать <span class="btn-text position-absolute">со скидкой 50%</span></button>
                                                 </div>
 
-                                                <p class="prices-bottom">* Цены указаны за глухое окно размером 1400х1300 мм с 2-х камерным стеклопакетом</p>
+                                                <p class="prices-bottom" data-bs-toggle="modal" data-bs-target="#exampleModal">* Цены указаны за глухое окно размером 1400х1300 мм с 2-х камерным стеклопакетом</p>
                                             </div>
                                         </div>
                                     </div>
@@ -670,7 +712,218 @@
         </div>
 
         <section class="quiz">
-            <div class="container"></div>
+            <div class="container">
+
+                <div class="quiz-block d-flex justify-content-between align-items-center">
+                    <div class="quiz-left">
+                        <h2 class="obj-title quiz-title mx-0 mb-5">УЗНАЙТЕ СТОИМОСТЬ ОКОН ПО ВАШИМ РАЗМЕРАМ</h2>
+                        <!-- <p class="sale-quiz">Ваша скидка: <span class="sale-quiz__red">10%</span></p> -->
+                        <p class="test-quiz">1. Выберите подходящий вариант окна</p>
+                        <form action="" class="quiz-form">
+                            <div class="quiz-block-click d-flex flex-wrap">
+
+                                <label class="quiz__label d-flex flex-column align-items-center me-3 me-md-5">
+                                <input class='quiz__input' type="radio" name="type">
+                                <img class="quiz-input__picture " src="./img/quiz/quiz-1-1.png" alt="">
+                                <p class="offer-quiz text-center mt-3">Поставить окно</p>
+                            </label>
+
+                                <label class="quiz__label d-flex flex-column align-items-center">
+                                <input class='quiz__input' type="radio" name="type">
+                                <img class="quiz-input__picture" src="./img/quiz/quiz-1.png" alt="">
+                                <p class="offer-quiz text-center mt-3">Остеклить балкон</p>
+
+                            </label>
+
+                            </div>
+
+                            <div class="step__button-wrap">
+                                <!-- <button class="btn-back me-3">Назад</button> -->
+                                <button class="btn-form btn-quiz-width">Далее</button>
+                            </div>
+                        </form>
+                    </div>
+                    <img class="quiz-picture-big" src="./img/quiz/big-man-win.png" alt="">
+                </div>
+
+                <div class="quiz-block d-flex justify-content-between align-items-center" style="display: none !important;">
+                    <div class="quiz-left">
+                        <h2 class="obj-title quiz-title mx-0 mb-5">УЗНАЙТЕ СТОИМОСТЬ ОКОН ПО ВАШИМ РАЗМЕРАМ</h2>
+                        <p class="sale-quiz">Ваша скидка: <span class="sale-quiz__red">10%</span></p>
+                        <p class="test-quiz">2. Будем ставить в квартиру или в частный дом?</p>
+                        <form action="" class="quiz-form">
+                            <div class="quiz-block-click d-flex flex-wrap">
+
+                                <label class="quiz__label me-3 me-md-5">
+                                <input class='quiz__input ' type="radio" name="type" >
+                                <img class="quiz-input__picture " src="./img/quiz/quiz-2-2.png" alt="">
+                                <p class="offer-quiz text-center mt-3">Поставить окно</p>
+                            </label>
+
+                                <label class="quiz__label">
+                                <input class='quiz__input' type="radio" name="type">
+                                <img class="quiz-input__picture" src="./img/quiz/quiz-2.png" alt="">
+                                <p class="offer-quiz text-center mt-3">Остеклить балкон</p>
+
+                            </label>
+
+                            </div>
+
+                            <div class="step__button-wrap">
+                                <button class="btn-back me-3 btn-quiz-width">Назад</button>
+                                <button class="btn-form btn-quiz-width">Далее</button>
+                            </div>
+                        </form>
+                    </div>
+                    <img class="quiz-picture-big" src="./img/quiz/big-man-win.png" alt="">
+                </div>
+
+                <div class="quiz-block d-flex justify-content-between align-items-center" style="display: none !important;">
+                    <div class="quiz-left">
+                        <h2 class="obj-title quiz-title mx-0 mb-5">УЗНАЙТЕ СТОИМОСТЬ ОКОН ПО ВАШИМ РАЗМЕРАМ</h2>
+                        <p class="sale-quiz">Ваша скидка: <span class="sale-quiz__red">20%</span></p>
+                        <p class="test-quiz">3. Какой профиль интересует?</p>
+                        <form action="" class="quiz-form">
+                            <div class="quiz-block-click d-flex flex-wrap">
+
+                                <label class="quiz__label">
+                                <input class='quiz__input' type="radio" name="type">
+                                <img class="quiz-input__picture me-3" src="./img/quiz/quiz-3.png" alt="">
+                                <p class="offer-quiz text-center mt-3">Veka</p>
+                            </label>
+
+                                <label class="quiz__label">
+                                <input class='quiz__input' type="radio" name="type">
+                                <img class="quiz-input__picture me-3" src="./img/quiz/quiz-3-1.png" alt="">
+                                <p class="offer-quiz text-center mt-3">Rehau</p>
+
+                            </label>
+
+                                <label class="quiz__label">
+                                <input class='quiz__input' type="radio" name="type">
+                                <img class="quiz-input__picture me-3 me-md-0" src="./img/quiz/quiz-3-2.png" alt="">
+                                <p class="offer-quiz text-center mt-3">Неважно</p>
+
+                            </label>
+
+                                <label class="quiz__label">
+                                <input class='quiz__input' type="radio" name="type">
+                                <img class="quiz-input__picture me-3" src="./img/quiz/quiz-3-3.png" alt="">
+                                <p class="offer-quiz text-center mt-3">KBE</p>
+
+                            </label>
+
+                                <label class="quiz__label">
+                                <input class='quiz__input' type="radio" name="type">
+                                <img class="quiz-input__picture" src="./img/quiz/quiz-3-4.png" alt="">
+                                <p class="offer-quiz text-center mt-3">Artec</p>
+
+                            </label>
+
+                            </div>
+
+                            <div class="step__button-wrap">
+                                <button class="btn-back me-3 btn-quiz-width">Назад</button>
+                                <button class="btn-form btn-quiz-width">Далее</button>
+                            </div>
+                        </form>
+                    </div>
+                    <img class="quiz-picture-big" src="./img/quiz/big-man-win.png" alt="">
+                </div>
+
+                <div class="quiz-block d-flex justify-content-between align-items-center" style="display: none !important;">
+                    <div class="quiz-left">
+                        <h2 class="obj-title quiz-title mx-0 mb-5">УЗНАЙТЕ СТОИМОСТЬ ОКОН ПО ВАШИМ РАЗМЕРАМ</h2>
+                        <p class="sale-quiz">Ваша скидка: <span class="sale-quiz__red">30%</span></p>
+                        <p class="test-quiz">4. Выберите цвет изделия</p>
+                        <form action="" class="quiz-form">
+                            <div class="quiz-block-click d-flex flex-wrap">
+
+                                <label class="quiz__label me-3 me-md-5">
+                                <input class='quiz__input' type="radio" name="type">
+                                <img class="quiz-input__picture " src="./img/quiz/quiz-4-1.png" alt="">
+                                <p class="offer-quiz text-center mt-3">Белое</p>
+                            </label>
+
+                                <label class="quiz__label">
+                                <input class='quiz__input' type="radio" name="type">
+                                <img class="quiz-input__picture" src="./img/quiz/quiz-4.png" alt="">
+                                <p class="offer-quiz text-center mt-3">Цветное <br> (с ламинацией)</p>
+
+                            </label>
+
+                            </div>
+
+                            <div class="step__button-wrap">
+                                <button class="btn-back me-3 btn-quiz-width">Назад</button>
+                                <button class="btn-form btn-quiz-width">Далее</button>
+                            </div>
+                        </form>
+                    </div>
+                    <img class="quiz-picture-big" src="./img/quiz/big-man-win.png" alt="">
+                </div>
+
+                <div class="quiz-block d-flex justify-content-between align-items-center" style="display: none !important;">
+                    <div class="quiz-left">
+                        <h2 class="obj-title quiz-title mx-0 mb-5">УЗНАЙТЕ СТОИМОСТЬ ОКОН ПО ВАШИМ РАЗМЕРАМ</h2>
+                        <p class="sale-quiz">Ваша скидка: <span class="sale-quiz__red">40%</span></p>
+                        <p class="test-quiz">5. С отделкой или без?</p>
+                        <form action="" class="quiz-form">
+                            <div class="quiz-block-click d-flex flex-wrap">
+
+                                <label class="quiz__label d-flex align-items-center">
+                                <input class='quiz__input' type="radio" name="type">
+                                <img class="quiz-input__picture me-4" src="./img/quiz/ok-check.png" alt="">
+                                <p class="offer-quiz text-start ">С отделкой (подоконник, водоотлив, откосы)</p>
+                            </label>
+
+                                <label class="quiz__label d-flex align-items-center">
+                                <input class='quiz__input' type="radio" name="type">
+                                <img class="quiz-input__picture me-4" src="./img/quiz/ok-check.png" alt="">
+                                <p class="offer-quiz  ">Без отделки</p>
+
+                            </label>
+
+                            </div>
+
+                            <div class="step__button-wrap">
+                                <button class="btn-back me-3 btn-quiz-width">Назад</button>
+                                <button class="btn-form btn-quiz-width">Далее</button>
+                            </div>
+                        </form>
+                    </div>
+                    <img class="quiz-picture-big" src="./img/quiz/big-man-win.png" alt="">
+                </div>
+
+                <div class="quiz-block d-flex justify-content-between align-items-center" style="display: none !important;">
+                    <div class="quiz-left">
+                        <h2 class="obj-title quiz-title mx-0 mb-5">УЗНАЙТЕ СТОИМОСТЬ ОКОН ПО ВАШИМ РАЗМЕРАМ</h2>
+                        <p class="sale-quiz">Ваша скидка: <span class="sale-quiz__red">50%</span></p>
+                        <p class="test-quiz">Оставьте свой номер телефона и мы свяжемся с вами в ближайшие 10 минут!
+                        </p>
+                        <form action="" class="quiz-form">
+
+                            <input class='quiz__input-tel d-block' type="tel" name="type" placeholder="Ваш телефон">
+
+
+                            <div class="step__button-wrap">
+                                <!-- <button class="btn-back me-3 btn-quiz-width">Назад</button> -->
+                                <button class="btn-form btn-quiz-width px-2">Получить скидку </button>
+                            </div>
+                        </form>
+                    </div>
+                    <img class="quiz-picture-big" src="./img/quiz/big-man-win.png" alt="">
+                </div>
+
+                <div class="quiz-block d-flex justify-content-between align-items-center" style="display: none !important;">
+                    <div class="quiz-left">
+                        <h2 class="obj-title quiz-title mx-0">УЗНАЙТЕ СТОИМОСТЬ ОКОН ПО ВАШИМ РАЗМЕРАМ</h2>
+                        <h3 class="finished mb-5">Заявка отправлена</h3>
+                        <p class="fiished-text">Мы получили вашу заявку. <br> Наш менеджер свяжится с вами.</p>
+                    </div>
+                    <img class="quiz-picture-big" src="./img/quiz/big-man-win.png" alt="">
+                </div>
+            </div>
         </section>
 
         <section class="services">
@@ -691,7 +944,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn-form">Подробнее</button>
+                            <button class="btn-form" data-bs-toggle="modal" data-bs-target="#exampleModal">Подробнее</button>
                         </div>
 
                         <div class="services__card">
@@ -706,7 +959,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn-form">Подробнее</button>
+                            <button class="btn-form" data-bs-toggle="modal" data-bs-target="#exampleModal">Подробнее</button>
                         </div>
 
                         <div class="services__card">
@@ -721,7 +974,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn-form">Подробнее</button>
+                            <button class="btn-form" data-bs-toggle="modal" data-bs-target="#exampleModal">Подробнее</button>
                         </div>
 
                     </div>

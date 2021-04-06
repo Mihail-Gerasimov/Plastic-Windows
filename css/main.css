@@ -471,10 +471,6 @@ button:focus {
 
 /* profile-system */
 
-.profile-systems {
-    /* margin-bottom: 150px; */
-}
-
 .profile-text {
     font-style: normal;
     font-weight: normal;
@@ -811,6 +807,165 @@ button:focus {
 
 
 /* quiz */
+
+.quiz-title {
+    text-align: left;
+    width: 610px;
+}
+
+.sale-quiz {
+    margin-right: 22px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    margin-bottom: 34px;
+    width: fit-content;
+}
+
+.test-quiz {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.sale-quiz__red {
+    background: #D11131;
+    border-radius: 8px;
+    padding: 5px 15px;
+    color: #ffffff;
+}
+
+.quiz-block-click {
+    width: 430px;
+    margin-bottom: 115px;
+}
+
+.quiz-block:not(:first-child) .quiz-block-click {
+    margin-bottom: 50px;
+}
+
+.quiz-block:nth-child(5) .quiz-block-click .quiz-input__picture {
+    filter: grayscale(100%);
+}
+
+.quiz-block:last-child .quiz-title {
+    margin-bottom: 160px;
+}
+
+.finished {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #C40021;
+}
+
+.fiished-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #343A40;
+}
+
+.quiz__input-tel {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #6D6D6D;
+    padding: 19px 0 19px 40px;
+    margin-bottom: 22px;
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 10px;
+    width: 315px;
+}
+
+.quiz-block:nth-child(6) .quiz-left .sale-quiz {
+    margin-bottom: 95px;
+}
+
+.quiz-block:nth-child(6) .quiz-left .test-quiz {
+    width: 560px;
+}
+
+.quiz__input-tel:hover {
+    border: 1px solid #BBBBBB !important;
+}
+
+.quiz__input-tel:focus {
+    border: 1px solid #BBBBBB !important;
+}
+
+.quiz__label {
+    /* margin-bottom: 10px; */
+    display: block;
+}
+
+.quiz-input__picture {
+    transition: 0.3s;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.quiz__input:checked+.quiz-input__picture {
+    border: 2px solid #C40021;
+    border-radius: 25px;
+}
+
+.quiz-block:nth-child(5) .quiz-block-click .quiz__input:checked+.quiz-input__picture {
+    filter: none;
+    border: 2px solid #C40021;
+    border-radius: 12px;
+}
+
+.quiz__input {
+    display: none;
+}
+
+.btn-quiz-width {
+    width: 215px;
+}
+
+.quiz-picture-big {
+    width: 820px;
+    margin-top: 170px;
+}
+
+.offer-quiz {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.btn-back {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #7D7D7D;
+    background: #DDDDDD;
+    border-radius: 10px;
+    transition: .3s;
+    padding: 18px 53px;
+}
+
+.btn-back:hover {
+    transition: .3s;
+    transform: scale(1.03);
+    color: #383838;
+    background: #ffffff;
+}
 
 
 /* quiz */
@@ -1337,3 +1492,157 @@ button:focus {
 
 
 /* footer */
+
+
+/* modal */
+
+.label-radio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    font-size: 12px;
+}
+
+.real-radio {
+    display: none;
+}
+
+.custom-radio {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    vertical-align: middle;
+    background: #d65369;
+    cursor: pointer;
+}
+
+.custom-radio--text {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    width: 280px;
+}
+
+.custom-radio img {
+    right: 0;
+    position: absolute;
+    top: 0;
+    transform: translate(-27%, 35%);
+}
+
+.label-radio input:checked+.custom-radio {
+    background: #C40021;
+}
+
+.modal-content {
+    background-color: #EDF5F8 !important;
+}
+
+.title-modal {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #C40021;
+    margin-top: 60px;
+}
+
+.modal-text {
+    margin: 0 auto;
+    width: 580px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #343A40;
+}
+
+.modal-dialog {
+    max-width: 680px;
+    margin: 1.75rem auto;
+}
+
+.form-input {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 50px 50px -40px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #929292;
+    width: 380px;
+    padding: 24px 0 24px 30px;
+}
+
+.form-input:hover {
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 50px 50px -40px rgba(0, 0, 0, 0.15);
+}
+
+.form-input:focus {
+    border: 1px solid #E0E0E0;
+    box-shadow: 0px 50px 50px -40px rgba(0, 0, 0, 0.15);
+}
+
+.btn-modal-width {
+    margin-bottom: 90px;
+}
+
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    padding: 0rem !important;
+    border-bottom: none;
+    /* border-top-left-radius: calc(.3rem - 1px); */
+    /* border-top-right-radius: calc(.3rem - 1px); */
+}
+
+.btn-close {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: .25em .25em;
+    background: none;
+    border: 0;
+    border-radius: .25rem;
+    opacity: .5;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #B4B4B4;
+}
+
+.modal-header .btn-close {
+    margin: 1.5rem 7.5rem -0.5rem auto;
+}
+
+.modal-thanks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDF5F8 !important;
+    background-image: url(../img/modal/modal-win.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 20;
+    position: fixed;
+    width: 380px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 500px;
+    border: 1px solid rgb(74, 124, 139);
+}
+
+
+/* modal */
