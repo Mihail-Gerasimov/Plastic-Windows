@@ -1605,7 +1605,7 @@ button:focus {
 
 .btn-close {
     box-sizing: content-box;
-    width: 1em;
+    width: fit-content;
     height: 1em;
     padding: .25em .25em;
     background: none;
