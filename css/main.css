@@ -273,10 +273,10 @@ button:focus {
 .header-title {
     font-style: normal;
     font-weight: 800;
-    font-size: 48px;
-    line-height: 59px;
-    width: 585px;
-    margin-bottom: 50px;
+    font-size: 39px;
+    line-height: 45px;
+    width: 475px;
+    margin-bottom: 60px;
 }
 
 .header-gift {

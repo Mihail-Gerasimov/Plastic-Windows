@@ -151,9 +151,9 @@
 @media (max-width: 1450px) {
     /* header */
     .header-title {
-        font-size: 38px;
+        font-size: 37px;
         line-height: 45px;
-        width: 460px;
+        width: 450px;
     }
     .header-gift {
         font-size: 18px;
@@ -956,7 +956,7 @@
     .header-title {
         text-align: center;
         margin-bottom: 300px;
-        width: 255px;
+        width: 279px;
     }
     .window-30 {
         display: none;
@@ -970,7 +970,7 @@
         margin: 120px auto 0;
     }
     .mobile-win-combo {
-        top: 95px;
+        top: 160px;
         left: 0;
     }
     /* header */
@@ -1371,6 +1371,7 @@
     .header-title {
         font-size: 24px;
         line-height: 29px;
+        width: 230px;
     }
     .header-gift {
         font-size: 14px;
