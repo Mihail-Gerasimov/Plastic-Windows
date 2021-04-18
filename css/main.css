@@ -276,17 +276,17 @@ button:focus {
     font-size: 39px;
     line-height: 45px;
     width: 475px;
-    margin-bottom: 60px;
+    margin-bottom: 32px;
 }
 
 .header-gift {
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 20px;
+    line-height: 25px;
     height: fit-content;
     position: relative;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .header-gift::before {
@@ -297,7 +297,27 @@ button:focus {
     width: 4px;
     height: 80px;
     left: 0;
-    top: -10px;
+    top: -2px;
+}
+
+.froze {
+    background: #FFFFFF;
+    border: 1px solid rgba(224, 224, 224, 0.58);
+    border-radius: 10px;
+    padding: 9px 25px;
+}
+
+.froze-text {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.froze-bold {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .header-gift-wei {
@@ -308,7 +328,7 @@ button:focus {
     position: absolute;
     right: -170px;
     top: 0;
-    transform: translateY(-35%);
+    transform: translateY(-13%);
 }
 
 .big-window {
@@ -387,86 +407,24 @@ button:focus {
     top: -45px;
 }
 
-.big-header__text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 150%;
-    width: 940px;
+.header-elements {
+    width: 1300px;
     margin: 200px auto 0;
+}
+
+.header-elements__item {
+    width: 290px;
+}
+
+.header-elements__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 125%;
 }
 
 
 /* header */
-
-
-/* pleasantprices */
-
-.pleasantprices {
-    position: relative;
-    margin-top: 70px;
-    padding-bottom: 50px;
-    padding-top: 290px;
-    background-image: url(../img/pleasantprices/pleasanprices-fon.png);
-    background-repeat: no-repeat;
-    background-position-y: -110px;
-    background-size: cover;
-    margin-bottom: 200px;
-}
-
-.name-win {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-}
-
-.pleasantprices-title {
-    margin-bottom: 105px;
-}
-
-.examples-window {
-    margin-bottom: 85px;
-}
-
-.examples-block__price {
-    margin-bottom: 60px;
-}
-
-.examples-price-top {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    text-decoration-line: line-through;
-}
-
-.examples-price-bottom {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-}
-
-.examples-price-bottom span {
-    font-weight: 700;
-}
-
-.btn-pleasantprices-width {
-    justify-content: center;
-    display: flex;
-    width: 445px;
-    margin: 0 auto !important;
-}
-
-.pleasantprices-tree {
-    transform: translateY(50%);
-    bottom: 0;
-    left: 0;
-}
-
-
-/* pleasantprices */
 
 
 /* profile-system */
@@ -834,6 +792,12 @@ button:focus {
     margin-bottom: 50px;
 }
 
+.test-quiz span {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 800;
+}
+
 .sale-quiz__red {
     background: #D11131;
     border-radius: 8px;
@@ -936,7 +900,7 @@ button:focus {
 
 .quiz-picture-big {
     width: 820px;
-    margin-top: 170px;
+    /* margin-top: 170px; */
 }
 
 .offer-quiz {
@@ -978,7 +942,7 @@ button:focus {
     background-image: url(../img/services-/services-fon.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1980px 1360px;
+    background-size: 1980px 1220px;
     padding-top: 240px;
     padding-bottom: 310px;
 }
@@ -1002,12 +966,12 @@ button:focus {
 }
 
 .services__card {
-    width: 366px;
-    height: 500px;
+    width: 380px;
+    height: 420px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .services__card:hover {
@@ -1024,6 +988,7 @@ button:focus {
 }
 
 .services__card__title {
+    text-align: center;
     font-style: normal;
     font-weight: bold;
     font-size: 21px;

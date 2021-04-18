@@ -12,12 +12,6 @@
 }
 
 @media (max-width: 1500px) {
-    /* navigation */
-    /* navigation */
-    /* header */
-    /* header */
-    /* pleasantprices */
-    /* pleasantprices */
     /* profile-systems */
     .prof-win-block {
         margin-top: 0px;
@@ -91,16 +85,6 @@
         margin-right: 15px;
     }
     /* profile-systems */
-    /* options */
-    /* options */
-    /* buy-profitable */
-    /* buy-profitable */
-    /* quiz */
-    /* quiz */
-    /* services */
-    /* services */
-    /* work */
-    /* work */
     /* difference */
     .difference {
         background-position-y: center;
@@ -142,10 +126,6 @@
         justify-content: space-around;
     }
     /* customer-reviews */
-    /* certificates */
-    /* certificates */
-    /* footer */
-    /* footer */
 }
 
 @media (max-width: 1450px) {
@@ -160,15 +140,10 @@
         line-height: 24px;
         padding-left: 15px;
     }
-    .header-gift::before {
-        height: 60px;
-        left: 0;
-        top: -5px;
-    }
     .window-30 {
         right: -110px;
         top: 0;
-        transform: translateY(-26%);
+        transform: translateY(15%);
         width: 115px;
     }
     .big-window {
@@ -208,46 +183,21 @@
         left: -21px;
         top: -45px;
     }
-    .big-header__text {
-        font-size: 16px;
-        width: 840px;
-        margin: 140px auto 0;
-    }
     /* header */
-    /* pleasantprices */
-    .pleasantprices {
-        padding-bottom: 50px;
-        padding-top: 140px;
-        background-position-y: -85px;
-    }
-    .pleasantprices-title {
-        margin-bottom: 80px;
-    }
-    .examples-window {
-        margin-bottom: 60px;
-    }
-    /* pleasantprices */
-    /* options */
-    /* options */
-    /* buy-profitable */
-    /* buy-profitable */
-    /* quiz */
-    /* quiz */
-    /* services */
-    /* services */
-    /* work */
-    /* work */
-    /* difference */
-    /* difference */
-    /* customer-reviews */
-    /* customer-reviews */
-    /* certificates */
-    /* certificates */
-    /* footer */
-    /* footer */
 }
 
 @media (max-width: 1400px) {
+    /* header */
+    .header-elements {
+        width: 930px;
+    }
+    .header-elements__item {
+        width: 245px;
+    }
+    .header-elements__text {
+        font-size: 17px;
+    }
+    /* header */
     .footer__box--first {
         margin-right: 100px;
     }
@@ -263,10 +213,10 @@
     .quiz-block:first-child .quiz-input__picture {
         width: 130px;
     }
-    .quiz-block:nth-child(4) .quiz-input__picture {
+    .quiz-block:nth-child(3) .quiz-input__picture {
         width: 130px;
     }
-    .quiz-block:nth-child(3) .quiz-block-click {
+    .quiz-block:nth-child(2) .quiz-block-click {
         width: 425px;
     }
     .offer-quiz {
@@ -286,9 +236,9 @@
         text-align: left;
         width: 570px;
     }
-    .quiz-block:nth-child(2) .quiz-input__picture {
+    /* .quiz-block:nth-child(2) .quiz-input__picture {
         width: 130px;
-    }
+    } */
 }
 
 @media (max-width: 1250px) {
@@ -308,14 +258,14 @@
         padding-left: 15px;
     }
     .header-gift::before {
-        height: 50px;
+        height: 65px;
         left: 0;
-        top: -5px;
+        top: -2px;
     }
     .window-30 {
-        right: -115px;
+        right: -100px;
         top: 0px;
-        transform: translateY(-26%);
+        transform: translateY(-6%);
         width: 150px;
     }
     .big-window {
@@ -361,39 +311,12 @@
         left: -6px;
         top: -35px;
     }
-    /* .big-window {
-        width: 470px;
-        transform: translateX(-40%);
-        left: 50%;
-        top: -110px;
-    } */
     /* header */
-    /* pleasantprices */
-    .examples-window {
-        justify-content: center !important;
-        flex-wrap: wrap;
-    }
-    .examples-block {
-        margin: 0 auto;
-    }
-    .btn-pleasantprices-width {
-        width: 345px;
-    }
-    .pleasantprices {
-        background-position-y: 0;
-    }
-    .pleasantprices-tree {
-        transform: translateY(49%);
-        height: 550px;
-    }
-    /* pleasantprices */
     /* options */
     .additional-options {
         margin-top: -35px;
     }
     /* options */
-    /* buy-profitable */
-    /* buy-profitable */
     /* quiz */
     .btn-back {
         font-size: 14px;
@@ -402,6 +325,8 @@
     /* quiz */
     /* services */
     .services {
+        margin: 100px 0 100px;
+        background-size: 1980px 670px;
         padding-top: 50px;
         padding-bottom: 100px;
     }
@@ -410,13 +335,13 @@
     }
     .services__card {
         width: 285px;
-        height: 440px;
+        height: 350px;
     }
     .services__img {
         margin-bottom: 22px;
     }
     .services__card__title {
-        font-size: 20px;
+        font-size: 16px;
     }
     .services__price {
         font-size: 20px;
@@ -482,10 +407,6 @@
         margin-right: 70px;
         padding-top: 25px;
     }
-    /* .over-footer__form {
-        width: 300px;
-        height: 300px;
-    } */
     .over-footer__form {
         align-items: flex-start !important;
         width: 300px;
@@ -512,7 +433,7 @@
     .big-window {
         width: 270px;
         transform: translateX(-41%);
-        top: -52px;
+        top: -15px;
     }
     /* header */
     /* quiz */
@@ -577,17 +498,24 @@
     }
     /* navigation */
     /* header */
-    .big-header__text {
-        font-size: 16px;
-        width: 600px;
-        margin: 140px auto 0;
+    .header-elements {
+        margin: 170px auto 0;
+        width: 620px;
+    }
+    .header-elements__individ--width {
+        width: 65px;
+    }
+    .header-elements__item img {
+        width: 65px;
+        height: 65px;
+    }
+    .header-elements__item {
+        width: 220px;
+    }
+    .header-elements__text {
+        font-size: 14px;
     }
     /* header */
-    /* pleasantprices */
-    .pleasantprices-tree {
-        display: none;
-    }
-    /* pleasantprices */
     /* options */
     .additional-options {
         margin-left: 70px;
@@ -710,7 +638,7 @@
         font-size: 20px;
         line-height: 22px;
     }
-    .quiz-block:nth-child(6) .quiz-left .test-quiz {
+    .quiz-block:nth-child(5) .quiz-left .test-quiz {
         width: 375px;
     }
     .quiz-picture-big {
@@ -729,12 +657,13 @@
     /* quiz */
     /* services */
     .services {
+        background-size: 1000px 490px;
         padding-top: 25px;
         padding-bottom: 20px;
     }
     .services__card {
         width: 205px;
-        height: 370px;
+        height: 300px;
     }
     .services__card:hover {
         transform: none;
@@ -743,7 +672,7 @@
         margin-bottom: 15px;
     }
     .services__card__title {
-        font-size: 18px;
+        font-size: 16px;
     }
     .services__price {
         font-size: 18px;
@@ -922,10 +851,10 @@
         display: none;
     }
     /* header */
-    .quiz-block:nth-child(3) .quiz-input__picture {
+    .quiz-block:nth-child(2) .quiz-input__picture {
         width: 100px;
     }
-    .quiz-block:nth-child(3) .quiz-block-click {
+    .quiz-block:nth-child(2) .quiz-block-click {
         width: 320px;
     }
 }
@@ -949,6 +878,9 @@
     }
     /* navigation */
     /* header */
+    .header-elements {
+        width: 470px;
+    }
     .header {
         background-position-y: -410px;
         padding-top: 35px;
@@ -964,18 +896,11 @@
     .header-block__left {
         margin-bottom: 80px;
     }
-    .big-header__text {
-        font-size: 16px;
-        width: 375px;
-        margin: 120px auto 0;
-    }
     .mobile-win-combo {
         top: 160px;
         left: 0;
     }
     /* header */
-    /* pleasantprices */
-    /* pleasantprices */
     /* profile-system */
     .prof-win-block {
         margin-top: 0px;
@@ -1116,6 +1041,10 @@
     }
     /* buy-profitable */
     /* quiz */
+    .test-quiz span {
+        font-size: 20px;
+        line-height: 30px;
+    }
     .finished {
         margin: 0 auto 85px !important;
         width: 230px;
@@ -1129,10 +1058,10 @@
     .quiz-block:last-child .quiz-title {
         margin-bottom: 70px !important;
     }
-    .quiz-block:nth-child(6) .quiz-left .sale-quiz {
+    .quiz-block:nth-child(5) .quiz-left .sale-quiz {
         margin-bottom: 50px;
     }
-    .quiz-block:nth-child(6) .quiz-left .test-quiz {
+    .quiz-block:nth-child(5) .quiz-left .test-quiz {
         width: 280px;
     }
     .quiz__input-tel {
@@ -1141,14 +1070,14 @@
         padding: 17px 0 17px 37px;
         /* width: 315px; */
     }
-    .quiz-block:nth-child(6) .btn-quiz-width {
+    .quiz-block:nth-child(5) .btn-quiz-width {
         width: 100%;
         margin: 0 auto;
     }
     .quiz-block:not(:first-child) .quiz-block-click {
         margin-bottom: 100px;
     }
-    .quiz-block:nth-child(3) .quiz-block-click {
+    .quiz-block:nth-child(2) .quiz-block-click {
         width: 220px;
     }
     .sale-quiz {
@@ -1368,6 +1297,12 @@
     }
     /* navigation */
     /* header */
+    .header-elements {
+        width: 250px;
+    }
+    .header-elements__item {
+        width: 195px;
+    }
     .header-title {
         font-size: 24px;
         line-height: 29px;
@@ -1379,44 +1314,12 @@
         padding-left: 10px;
     }
     .header-gift::before {
-        height: 45px;
+        height: 53px;
     }
     .form-general__block {
         margin-right: 0px;
     }
-    .big-header__text {
-        font-size: 13px;
-        width: 285px;
-    }
     /* header */
-    /* pleasantprices */
-    .pleasantprices {
-        margin-top: 20px;
-        margin-bottom: 75px;
-    }
-    .examples-window {
-        margin-bottom: 20px;
-    }
-    .pleasantprices-title {
-        margin-bottom: 35px;
-    }
-    .name-win {
-        font-size: 18px;
-        line-height: 22px;
-    }
-    .examples-block__price {
-        margin-bottom: 22px;
-    }
-    .examples-price-top {
-        text-align: center;
-    }
-    .examples-price-bottom {
-        text-align: center;
-    }
-    .btn-pleasantprices-width {
-        width: 275px;
-    }
-    /* pleasantprices */
     /* profile-system */
     .slider-text {
         width: 275px;
