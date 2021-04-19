@@ -426,6 +426,18 @@
         left: -8px;
     }
     /* footer */
+    /* pvh */
+    .pvh-man {
+        width: 550px;
+    }
+    .pvh-text__information {
+        font-size: 16px;
+        line-height: 135%;
+    }
+    .pvh-text {
+        max-width: 630px;
+    }
+    /* pvh */
 }
 
 @media (max-width: 1100px) {
@@ -655,6 +667,23 @@
         line-height: 19px;
     }
     /* quiz */
+    /* pvh */
+    .pvh {
+        margin-top: 40px;
+        padding-bottom: 160px;
+        background-size: 1000px 1225px;
+    }
+    .pvh-man {
+        width: 420px;
+    }
+    .pvh-text {
+        max-width: 430px;
+    }
+    .pvh-text__information {
+        font-size: 13px;
+        text-align: center;
+    }
+    /* pvh */
     /* services */
     .services {
         background-size: 1000px 490px;
@@ -1399,8 +1428,24 @@
         margin-right: -100px;
     }
     /* buy-profitable */
-    /* quiz */
-    /* quiz */
+    /* pvh */
+    .pvh {
+        margin-top: 40px;
+        padding-bottom: 75px;
+        background-size: 767px 1030px;
+        background-position-y: -63px;
+        padding-top: 110px;
+    }
+    .pvh-man {
+        width: 300px;
+    }
+    .pvh-text {
+        max-width: 370px;
+    }
+    .pvh-text__information {
+        font-size: 12px;
+    }
+    /* pvh */
     /* services */
     .services__title {
         margin-bottom: 70px;

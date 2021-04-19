@@ -935,6 +935,35 @@ button:focus {
 /* quiz */
 
 
+/* pvh */
+
+.pvh {
+    margin-top: 100px;
+    background-position-y: -90px;
+    z-index: 10;
+    background-image: url(../img/pvh/pvh-fon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 190px;
+    padding-bottom: 195px;
+    background-size: 1980px 1300px;
+}
+
+.pvh-text {
+    max-width: 780px;
+}
+
+.pvh-text__information {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 140%;
+}
+
+
+/* pvh */
+
+
 /* services */
 
 .services {
