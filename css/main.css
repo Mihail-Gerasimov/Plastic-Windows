@@ -261,6 +261,36 @@ button:focus {
 
 /* header */
 
+.label-sale-mobile {
+    display: none;
+}
+
+.label-sale {
+    z-index: 20;
+    left: 50%;
+    top: 190px;
+    transform: translateX(-51%);
+}
+
+.label-yellow {
+    z-index: 25;
+}
+
+.label-sale__price {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    transform: rotate( -31.4deg);
+    z-index: 22;
+    left: 15%;
+    top: 71px;
+}
+
+.label-sale__price span {
+    font-weight: 800;
+}
+
 .header {
     background-image: url(../img/common-fon-one.png);
     background-repeat: no-repeat;
