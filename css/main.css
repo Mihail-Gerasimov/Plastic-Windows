@@ -861,6 +861,10 @@ button:focus {
     margin-bottom: 160px;
 }
 
+.quiz-block:first-child .quiz-block-click {
+    width: 585px;
+}
+
 .finished {
     font-style: normal;
     font-weight: 900;
