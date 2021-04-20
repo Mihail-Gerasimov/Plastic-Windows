@@ -1380,10 +1380,10 @@
     /* navigation */
     /* header */
     .red-line {
-        width: 44px;
+        width: 32px;
         height: 1px;
-        top: 48%;
-        left: 24%;
+        top: 50%;
+        left: 25%;
     }
     .label-yellow {
         width: 125px;
