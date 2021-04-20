@@ -922,6 +922,10 @@ button:focus {
     cursor: pointer;
 }
 
+.quiz-input__picture--check {
+    width: 50px;
+}
+
 .quiz__input:checked+.quiz-input__picture {
     border: 2px solid #C40021;
     border-radius: 25px;
