@@ -276,6 +276,15 @@ button:focus {
     z-index: 25;
 }
 
+.red-line {
+    transform: rotate( -30.32deg);
+    background-color: #C40021;
+    height: 2px;
+    width: 50px;
+    top: 48%;
+    left: 27%;
+}
+
 .label-sale__price {
     font-style: normal;
     font-weight: normal;

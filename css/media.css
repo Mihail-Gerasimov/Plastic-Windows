@@ -247,6 +247,11 @@
 
 @media (max-width: 1250px) {
     /* header */
+    .red-line {
+        width: 43px;
+        top: 49%;
+        left: 27%;
+    }
     .label-sale {
         top: 140px;
     }
@@ -458,6 +463,11 @@
 
 @media (max-width: 1100px) {
     /* header */
+    .red-line {
+        width: 33px;
+        top: 48%;
+        left: 27%;
+    }
     .label-yellow {
         width: 150px;
     }
@@ -939,6 +949,9 @@
     }
     /* navigation */
     /* header */
+    .red-line {
+        width: 35px;
+    }
     .label-sale-mobile {
         display: block;
     }
@@ -1366,6 +1379,12 @@
     }
     /* navigation */
     /* header */
+    .red-line {
+        width: 44px;
+        height: 1px;
+        top: 48%;
+        left: 24%;
+    }
     .label-yellow {
         width: 125px;
     }
