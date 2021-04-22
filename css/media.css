@@ -1177,6 +1177,9 @@
     }
     /* buy-profitable */
     /* quiz */
+    .quiz-block {
+        margin-top: 45px;
+    }
     .test-quiz span {
         font-size: 20px;
         line-height: 30px;
@@ -1674,5 +1677,31 @@
         width: 300px;
         margin-top: 40px;
         height: 450px;
+    }
+}
+
+@media (max-height: 765px) {
+    .close-element {
+        top: 75px;
+    }
+}
+
+@media(max-width:992px) {
+    .close-element {
+        top: 0px;
+    }
+}
+
+@media(max-width:900px) {
+    .close-element {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media(max-width:576px) {
+    .close-element {
+        top: 5px;
+        right: 5px;
     }
 }
