@@ -213,7 +213,7 @@
                                 <div class="services__card__title">Установка окон в квартиры </div>
 
                             </div>
-                            <button class="btn-form">Подробнее</button>
+                            <button class="btn-form" data-bs-toggle="modal" data-bs-target="#exampleModal">Подробнее</button>
                         </div>
 
                         <div class="services__card services__card--mobile">
@@ -222,7 +222,7 @@
                                 <div class="services__card__title">Установка окон в частные дома</div>
 
                             </div>
-                            <button class="btn-form">Подробнее</button>
+                            <button class="btn-form" data-bs-toggle="modal" data-bs-target="#exampleModal">Подробнее</button>
                         </div>
 
                         <div class="services__card services__card--mobile">
@@ -231,7 +231,7 @@
                                 <div class="services__card__title">Остекление балконов и лоджий</div>
 
                             </div>
-                            <button class="btn-form">Подробнее</button>
+                            <button class="btn-form" data-bs-toggle="modal" data-bs-target="#exampleModal">Подробнее</button>
                         </div>
 
                     </div>
@@ -780,188 +780,14 @@
         </div>
 
         <section class="quiz">
-            <div class="container">
-
-                <div class="quiz-block d-flex justify-content-between align-items-center">
-                    <div class="quiz-left">
-                        <h2 class="obj-title quiz-title mx-0 mb-5">УЗНАЙТЕ СТОИМОСТЬ ОКОН ПО ВАШИМ РАЗМЕРАМ<br><span class="header-color text-uppercase"> и получи скидку до 55%</span></h2>
-                        <!-- <p class="sale-quiz">Ваша скидка: <span class="sale-quiz__red">10%</span></p> -->
-                        <p class="test-quiz">1. Выберите подходящий вариант окна</p>
-                        <form action="" class="quiz-form">
-                            <div class="quiz-block-click d-flex flex-wrap">
-
-                                <label class="quiz__label d-flex flex-column align-items-center me-2 me-md-5">
-                                <input class='quiz__input' type="radio" name="type">
-                                <img class="quiz-input__picture " src="./img/quiz/quiz-1-1.png" alt="">
-                                <p class="offer-quiz text-center mt-3">Окна для квартиры</p>
-                            </label>
-
-                                <label class="quiz__label d-flex flex-column align-items-center mb-3 mb-lg-0 me-0 me-lg-5">
-                                <input class='quiz__input' type="radio" name="type">
-                                <img class="quiz-input__picture" src="./img/quiz/quiz-1.png" alt="">
-                                <p class="offer-quiz text-center mt-3">Окна для частных <br> домов</p>
-
-                            </label>
-
-                                <label class="quiz__label d-flex flex-column align-items-center">
-                                <input class='quiz__input' type="radio" name="type">
-                                <img class="quiz-input__picture" src="./img/quiz/quiz-1-2.png" alt="">
-                                <p class="offer-quiz text-center mt-3">Окна для балконов <br> и лоджий</p>
-
-                            </label>
-
-                            </div>
-
-                            <div class="step__button-wrap">
-                                <!-- <button class="btn-back me-3">Назад</button> -->
-                                <button class="btn-form btn-quiz-width">Далее</button>
-                            </div>
-                        </form>
-                    </div>
-                    <img class="quiz-picture-big" src="./img/quiz/big-man-win.png" alt="">
+            <div class="container d-flex justify-content-center justify-content-md-between align-items-center">
+                <div class="start-quiz">
+                    <h2 class="obj-title quiz-title text-center text-md-start">
+                        УЗНАЙТЕ СТОИМОСТЬ ОКОН ПО ВАШИМ РАЗМЕРАМ <br> <span class="header-color text-uppercase">и получи скидку до 55%</span>
+                    </h2>
+                    <button class="btn-form start-width">Пройти тест.</button>
                 </div>
-
-
-                <div class="quiz-block d-flex justify-content-between align-items-center" style="display: none !important;">
-                    <div class="quiz-left">
-                        <p class="test-quiz"> <span>2. Какой профиль интересует?</span></p>
-                        <p class="sale-quiz">Ваша скидка: <span class="sale-quiz__red">20%</span></p>
-                        <form action="" class="quiz-form">
-                            <div class="quiz-block-click d-flex flex-wrap">
-
-                                <label class="quiz__label">
-                                <input class='quiz__input' type="radio" name="type">
-                                <img class="quiz-input__picture me-3" src="./img/quiz/quiz-3.png" alt="">
-                                <p class="offer-quiz text-center mt-3">Veka</p>
-                            </label>
-
-                                <label class="quiz__label">
-                                <input class='quiz__input' type="radio" name="type">
-                                <img class="quiz-input__picture me-3" src="./img/quiz/quiz-3-1.png" alt="">
-                                <p class="offer-quiz text-center mt-3">Rehau</p>
-
-                            </label>
-
-                                <label class="quiz__label">
-                                <input class='quiz__input' type="radio" name="type">
-                                <img class="quiz-input__picture me-3 me-md-0" src="./img/quiz/quiz-3-2.png" alt="">
-                                <p class="offer-quiz text-center mt-3">Неважно</p>
-
-                            </label>
-
-                                <label class="quiz__label">
-                                <input class='quiz__input' type="radio" name="type">
-                                <img class="quiz-input__picture me-3" src="./img/quiz/quiz-3-3.png" alt="">
-                                <p class="offer-quiz text-center mt-3">KBE</p>
-
-                            </label>
-
-                                <label class="quiz__label">
-                                <input class='quiz__input' type="radio" name="type">
-                                <img class="quiz-input__picture" src="./img/quiz/quiz-3-4.png" alt="">
-                                <p class="offer-quiz text-center mt-3">Artec</p>
-
-                            </label>
-
-                            </div>
-
-                            <div class="step__button-wrap">
-                                <button class="btn-back me-3 btn-quiz-width">Назад</button>
-                                <button class="btn-form btn-quiz-width">Далее</button>
-                            </div>
-                        </form>
-                    </div>
-                    <img class="quiz-picture-big" src="./img/quiz/big-man-win.png" alt="">
-                </div>
-
-                <div class="quiz-block d-flex justify-content-between align-items-center" style="display: none !important;">
-                    <div class="quiz-left">
-                        <p class="test-quiz"> <span>3. Выберите цвет изделия</span></p>
-                        <p class="sale-quiz">Ваша скидка: <span class="sale-quiz__red">30%</span></p>
-                        <form action="" class="quiz-form">
-                            <div class="quiz-block-click d-flex flex-wrap">
-
-                                <label class="quiz__label me-3 me-md-5">
-                                <input class='quiz__input' type="radio" name="type">
-                                <img class="quiz-input__picture " src="./img/quiz/quiz-4-1.png" alt="">
-                                <p class="offer-quiz text-center mt-3">Белое</p>
-                            </label>
-
-                                <label class="quiz__label">
-                                <input class='quiz__input' type="radio" name="type">
-                                <img class="quiz-input__picture" src="./img/quiz/quiz-4.png" alt="">
-                                <p class="offer-quiz text-center mt-3">Цветное <br> (с ламинацией)</p>
-
-                            </label>
-
-                            </div>
-
-                            <div class="step__button-wrap">
-                                <button class="btn-back me-3 btn-quiz-width">Назад</button>
-                                <button class="btn-form btn-quiz-width">Далее</button>
-                            </div>
-                        </form>
-                    </div>
-                    <img class="quiz-picture-big" src="./img/quiz/big-man-win.png" alt="">
-                </div>
-
-                <div class="quiz-block d-flex justify-content-between align-items-center" style="display: none !important;">
-                    <div class="quiz-left">
-                        <p class="test-quiz"> <span>4. С отделкой или без?</span></p>
-                        <p class="sale-quiz">Ваша скидка: <span class="sale-quiz__red">40%</span></p>
-                        <form action="" class="quiz-form">
-                            <div class="quiz-block-click d-flex flex-wrap">
-
-                                <label class="quiz__label d-flex align-items-center mb-4">
-                                <input class='quiz__input' type="radio" name="type">
-                                <img class="quiz-input__picture--check me-4" src="./img/quiz/ok-check.png" alt="">
-                                <p class="offer-quiz text-start ">С отделкой (подоконник, водоотлив, откосы)</p>
-                            </label>
-
-                                <label class="quiz__label d-flex align-items-center">
-                                <input class='quiz__input' type="radio" name="type">
-                                <img class="quiz-input__picture--check me-4" src="./img/quiz/ok-check.png" alt="">
-                                <p class="offer-quiz ">Без отделки</p>
-
-                            </label>
-
-                            </div>
-
-                            <div class="step__button-wrap">
-                                <button class="btn-back me-3 btn-quiz-width">Назад</button>
-                                <button class="btn-form btn-quiz-width">Далее</button>
-                            </div>
-                        </form>
-                    </div>
-                    <img class="quiz-picture-big" src="./img/quiz/big-man-win.png" alt="">
-                </div>
-
-                <div class="quiz-block d-flex justify-content-between align-items-center" style="display: none !important;">
-                    <div class="quiz-left">
-                        <p class="test-quiz"><span>Оставьте свой номер телефона и мы свяжемся с вами в ближайшие 10 минут!</span></p>
-                        <p class="sale-quiz">Ваша скидка: <span class="sale-quiz__red">55%</span></p>
-
-                        <form action="" class="quiz-form">
-
-                            <input class='quiz__input-tel d-block' type="tel" name="type" placeholder="Ваш телефон">
-
-
-                            <div class="step__button-wrap">
-                                <!-- <button class="btn-back me-3 btn-quiz-width">Назад</button> -->
-                                <button class="btn-form btn-quiz-width px-2">Получить скидку </button>
-                            </div>
-                        </form>
-                    </div>
-                    <img class="quiz-picture-big" src="./img/quiz/big-man-win.png" alt="">
-                </div>
-
-                <div class="quiz-block d-flex justify-content-between align-items-center" style="display: none !important;">
-                    <div class="quiz-left">
-                        <h3 class="finished mb-5">Заявка отправлена</h3>
-                        <p class="fiished-text">Мы получили вашу заявку. <br> Наш менеджер свяжится с вами.</p>
-                    </div>
-                    <img class="quiz-picture-big" src="./img/quiz/big-man-win.png" alt="">
-                </div>
+                <img class="quiz-picture-big" src="./img/quiz/big-man-win.png" alt="">
             </div>
         </section>
 
